@@ -1,0 +1,33 @@
+  /* #livesearch a{  text-align: left; display: block; }
+    .languageChange .list{    padding-top: 40px !important;}
+    .infix_theme_rtl .list{    padding-top: 40px !important;}
+    .infix_theme_style .list{    padding-top: 40px !important;}
+    #livesearch a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: #828bb2;
+    } */
+
+    .search-bar{
+    position: relative;
+}
+#livesearch{
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+    width: 50%;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+#livesearch a{
+    display: inline-block;
+    padding: 8px 20px;
+    color: #828bb2;
+}
+#livesearch a:hover{
+    background-color: #f6f6f6;
+}
+ .nice-select.open .list { min-width: 200px;  left: 0;  padding: 5px; }
+                            .nice-select .nice-select-search { min-width: 190px; }

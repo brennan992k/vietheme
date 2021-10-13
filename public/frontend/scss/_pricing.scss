@@ -1,0 +1,54 @@
+.pricing_area{
+    .single_pricing{
+        padding: 53px 55px 60px 55px;
+        margin-bottom: 60px;
+        @media #{$mobile_device}{
+            margin-bottom: 30px;
+        }
+        @media #{$large_device}{
+            padding: 53px 30px 60px 30px;
+        }
+        .pricing_heading{
+            h1{
+                font-size: 42px;
+                font-family: $title_font;
+                font-weight: 700;
+                color: #222222;
+                margin-bottom: 11px;
+            }
+            span{
+                font-family: $bodyfont;
+                font-size: 16px;
+                color: #888888;
+            }
+        }
+        .pricing_thumb{
+            margin: 38px 0 36px 0;
+            img{
+
+            }
+        }
+        h3{
+            font-size: 18px;
+            color: #222222;
+            font-family: $title_font;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+                line-height: 30px;
+                color: #888888;
+                border-bottom: 1px solid #eeeeee;
+                padding: 11px 0;
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+        a{
+            margin-top: 21px;
+        }
+    }
+}

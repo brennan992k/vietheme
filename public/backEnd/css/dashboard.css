@@ -1,0 +1,17 @@
+  body{
+    /* display: none; */
+  }
+#line-chart,
+#pie-chart{
+  /* min-height: 300px; */
+}
+.DM_full_height {
+    height: calc(100% - 30px);
+}
+  .canvasjs-chart-credit{
+      display:none;
+    }
+      .without-box-shadow{
+        box-shadow:none !important;
+        
+    }

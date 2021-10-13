@@ -1,0 +1,79 @@
+textarea.error {
+    border: 1px solid #ff0000 !important;
+}
+
+.easyimage {
+    overflow: auto;
+}
+
+.easyimage img {
+    width: 100%;
+}
+
+.over_view_info img {}
+
+.over_view_info p {
+    overflow: auto;
+}
+
+.feature_image_ck {
+    max-width: 100%;
+}
+
+.overview {
+    color: #545454 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #545454;
+}
+
+.main-details-area .overview .over_view_info ul {
+    padding-left: 30px;
+}
+
+.main-details-area .overview .over_view_info h3,
+.main-details-area .overview .over_view_info h2,
+.main-details-area .overview .over_view_info h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0 18px 0;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 12px;
+}
+
+.main-details-area .overview .over_view_info ul li {
+    font-size: 15px;
+    font-weight: 300;
+    list-style: disc;
+}
+
+.author-tag {
+    background-color: gray;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.purchased-tag {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.supported-tag {
+    background-color: green;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}

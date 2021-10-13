@@ -1,0 +1,6 @@
+    #toast-container>.toast-success{
+        background-image : none !important; 
+     }
+     .note-popover{
+         display: none;
+     }

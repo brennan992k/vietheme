@@ -1,0 +1,17 @@
+{
+    "Systemsetting": {
+        "migration": [
+        ],
+        "names": [
+        ],
+        "versions": [
+            "0.1"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is Systemsetting Module for Systemsetting. Thanks for using."
+        ]
+    }
+}

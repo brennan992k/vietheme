@@ -1,0 +1,335 @@
+.portfolio_details {
+    max-width: 200px;
+}
+
+.portflio_thumb.d-flex.align-items-center {
+    max-width: 330px;
+}
+
+.user_profile .portfolio_list .single_portfolio_list .total-prise h2 {
+    font-size: 25px;
+}
+
+.user_profile .portfolio_list .single_portfolio_list .total-prise p {
+    font-size: 14px;
+}
+
+.earnings_area .single_earning {}
+
+.user_profile .portfolio_list .single_portfolio_list .cart_heart .boxed-btn {}
+
+.user_author_pro {
+    cursor: pointer;
+}
+
+.customselect .list {
+    max-height: 300px !important;
+    overflow-y: auto !important;
+}
+
+label.error {
+    color: red !important;
+    right: 0px !important;
+}
+
+.invalid-feedback {
+    display: inline-block !important;
+}
+
+
+/* 
+.profile_pic input {
+    z-index: 0;
+} */
+
+.modal-backdrop {
+    z-index: 999;
+}
+
+.pro_change {
+    width: 100%;
+}
+
+.download_inner-btn a:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+
+/* rating star  */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
+
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+    display: block;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #ffd700;
+}
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #ffed85;
+}
+
+
+/* form  */
+
+form#test-form2 {
+    background: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+}
+
+form#test-form2 h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+form#test-form2 .pro_name {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+form#test-form2 .pro_name a {
+    font-style: italic;
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+form#test-form2 .pro_name span {
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.your_rated.d-flex strong {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    top: 5px;
+}
+
+.comments_field textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+}
+
+.comments_field textarea:focus {
+    outline: none;
+}
+
+.comments_field label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.comments_field {
+    margin-bottom: 10px;
+}
+
+.comments_field span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.tag_ieam p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.tag_ieam {
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.button_info {
+    text-align: right;
+}
+
+.reviews_text_w p {
+    font-size: 12px;
+}
+
+form#test-form2 button.mfp-close {
+    display: none;
+}
+
+form#test-form2 h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000;
+}
+
+.add_lisence_popup .mfp-close {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    position: relative !important;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 1;
+    padding: 0 0 18px 10px;
+    color: #fff;
+    padding: 0 40px !important;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+    border: none !important;
+    background: #fafafa;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+}
+
+.add_lisence_popup .mfp-close:hover {
+    background-image: -moz-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+    background-image: -webkit-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+    background-image: -ms-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+    color: #fff !important;
+}
+
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+    -webkit-appearance: inherit;
+}
+
+.add_lisence_popup .boxed-btn-white:hover {
+    box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+    color: #fff !important;
+}
+
+.more_options a {
+    cursor: pointer;
+}
+
+.review_rating i {
+    color: #ffd700 !important;
+    margin: 0;
+    padding: 10px 4px 0px 2px;
+    font-size: 18px;
+}
+
+.thumb_heading h5 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.thumb_heading p {
+    font-size: 12px;
+    padding: 10px;
+}

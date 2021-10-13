@@ -1,0 +1,157 @@
+.my_coupon{
+    background: #fafafa;
+    padding: 40px;
+    @media #{$mobile_device} {
+        overflow-x: scroll;
+        padding: 20px;
+    }
+    .my_coupens_headeing{
+        h3{
+            font-size: 18px;
+            font-family: $title_font;
+            font-weight: 500;
+            color: #222222;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $bodyfont;
+            font-weight: 300;
+            margin-bottom: 0;
+            br{
+                @media #{$mobile_device}{
+                    display: none;
+                }
+                @media #{$tablet_device}{
+                    display: none;
+                }
+                @media #{$mid_device}{
+                    display: none;
+                }
+                @media #{$large_device}{
+                    display: none;
+                }
+            }
+
+        }
+    }
+    table{
+        tr{
+            @include flexbox();
+            @include align-items(center);
+
+            th{
+                font-size: 12px;
+                font-weight: 500;
+                font-family: $title_font;
+                color: #000000;
+                border-top: 0;
+                width: 20%;
+            }
+            td{
+                color: #888888;
+                font-family: $bodyfont;
+                font-weight: 300;
+                font-size: 12px;
+                border-top: 0;
+                padding: 0;
+                line-height: 12px;
+                padding: 10px 9px;
+                width: 20%;
+                &.edit-buttons {
+                    button {
+                        padding: 10px;
+                        border: 0;
+                        margin: 0 5px;
+                        cursor: pointer;
+                        color: #fff;
+                        background: #ff0000;
+                        font-size: 12px;
+                        font-weight: 700;
+                        padding: 9px 25px;
+                        font-family: $title_font;
+                        @media #{$mobile_device} {
+                            margin: 3px 0;
+                        }
+                        @media #{$tablet_device} {
+                            margin: 3px 0;
+                        }
+                        @media #{$large_device} {
+                            margin: 3px 4px;
+                        }
+                        &.edit{
+                            @extend %primary-btn;
+                            &:hover{
+                                @include box-shadow(0px 10px 20px 0px rgba(108, 39, 255, 0.3));
+                            }
+                        }
+                        &.Restore{
+                            @extend %primary-btn;
+                            &:hover{
+                                @include box-shadow(0px 10px 20px 0px rgba(108, 39, 255, 0.3));
+                            }
+                        }
+                    }
+                }
+            }
+            background: #ffffff;
+            &:nth-child(2n-2){
+                background: #fafafa;
+            }
+            &:nth-child(1){
+                background: #fafafa !important;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 1px;
+            }
+        }
+    }
+
+
+
+    // form
+    label{
+        font-size: 11px;
+        font-family: $title_font;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 400;
+        margin-bottom: 7px;
+        span{
+            color: #ff0000;
+        }
+    }
+    input{
+        width: 100%;
+        background: #ffffff;
+        height: 50px;
+        border: 0;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            font-size: 13px;
+            color: #888888;
+            font-family: $bodyfont;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+    }
+    .coupns-btn{
+        button{
+            border: 0;
+            &.boxed-btn {
+                padding: 15px 60px;
+            }
+        }
+    }
+    .nice-select {
+        background: #fff;
+    }
+}
+
+  

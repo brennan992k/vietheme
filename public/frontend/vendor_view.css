@@ -1,0 +1,6 @@
+  .invalid-feedback{
+    display: inline-block !important;
+  }
+.trash{
+       cursor: pointer;
+   }

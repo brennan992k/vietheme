@@ -1,0 +1,46 @@
+   .title_color{
+        color: whitesmoke;
+    }
+    .text_center{
+        text-align: center;
+    }
+    .card_padding{
+      padding: 10px;
+    }
+    .button_style{
+        background-color: rebeccapurple;
+        color: whitesmoke;
+    }
+  
+    .text_stype_p{
+        padding-left: 15px; 
+        font-weight: bold;
+    }
+    .title{
+        text-align: center !important;
+        color:#fff !important;
+    }
+  .passport-authorize .container {
+            margin-top: 30px;
+        }
+
+        .passport-authorize .scopes {
+            margin-top: 20px;
+        }
+
+        .passport-authorize .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .passport-authorize .btn {
+            width: 125px;
+        }
+
+        .passport-authorize .btn-approve {
+            margin-right: 15px;
+        }
+
+        .passport-authorize form {
+            display: inline;
+        }

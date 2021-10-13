@@ -1,0 +1,158 @@
+
+
+// slick-nav
+.mobile_menu{
+    @media #{$mobile_device} {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        z-index: 9;
+    }
+}
+.slicknav_menu{
+    .slicknav_nav {
+        background: #fff;
+        float: right;
+        margin-top: 0;
+        padding: 0;
+        width: 95%;
+        padding: 0;
+        border-radius: 0px;
+        margin-top: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 10px;
+        top: 50px;
+        a{
+            &:hover{
+                background: transparent;
+                color: #7c32ff;
+            }
+            &.active{
+                color:#7c32ff;
+            }
+            i{
+                @media #{$mobile_device} {
+                    display: none;
+                }
+                @media #{$tablet_device} {
+                    display: none;
+                }
+            }
+        }
+        .slicknav_btn {
+            background-color: transparent;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 99;
+            border: 1px solid #ddd;
+           
+            top: 3px;
+            right: 5px;
+            .slicknav_icon{
+                margin-right: 6px;
+                margin-top: 3px;
+                position: relative;
+                padding-bottom: 3px;
+                top: -11px;
+                right: -5px;
+            }
+        }
+    }
+    @media #{$mobile_device} {
+        margin-right: 12px;
+    }
+}
+
+
+
+// slick-nav
+.slicknav_nav .slicknav_arrow {
+    float: right;
+    font-size: 22px;
+    position: relative;
+    // top: -9px;  
+    top: 0px;  
+}
+.slicknav_btn {
+	background-color: transparent;
+	cursor: pointer;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 99;
+	border: none;
+	border-radius: 3px;
+	top: 5px;
+	padding: 5px;
+	right: 6px;
+	margin-top: 0;
+	position: absolute;
+    top: -28px;
+    padding: 5px 5px 8px 5px;
+    background: #333;
+    @include transition(.5s);
+    left: 0;
+    right: auto;
+    top: 0;
+    top: 8px;
+    left: 5px;
+    &:hover{
+      @extend %primary-btn2;
+    }
+}
+
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #ffffff;
+	height: 3px;
+	margin: 4px 0;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 27px;
+	position: relative;
+	border-radius: 4px;
+}
+.slicknav_nav a {
+	padding: 6px 10px;
+}
+.slicknav_menu .slicknav_icon {
+	margin-right: 6px;
+	margin-top: 3px;
+	position: relative;
+	right: 6px;
+	top: -2px;
+	padding-bottom: 3px;
+}
+.slicknav_menu .slicknav_icon {
+	margin-right: 6px;
+	margin-top: 3px;
+	position: relative;
+	right: 2px;
+	top: -2px;
+	padding-bottom: 3px;
+}
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #ffffff;
+	height: 2px;
+	margin: 4px 0;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 25px;
+	position: relative;
+    border-radius: 4px;
+    width: 23px;
+}
+.slicknav_menu .slicknav_icon {
+    margin-right: 6px;
+    margin-top: 3px;
+    position: relative;
+    right: 3px;
+    top: -5px;
+    padding-bottom: 3px;
+    top: -4px;
+}

@@ -1,0 +1,33 @@
+    label.error{
+        color: red;
+    }
+    .invalid-feedback{
+    display: inline-block !important;
+   }
+   .Pagination{
+       margin-top: 0px
+   }
+   .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+    .boxed-btn{
+        width: 100%
+    }
+    .couponAdd{
+        padding: 0px !important;
+    }
+    label.error{
+        color: red;
+    }
+    .invalid-feedback{
+    display: inline-block !important;
+   }
+   .trash{
+       cursor: pointer;
+   }
+   .Pagination{
+       margin-top: 0px
+   }

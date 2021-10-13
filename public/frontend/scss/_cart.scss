@@ -1,0 +1,423 @@
+.main_cart-area{
+    .cart_description{
+        .cart_description_heading{
+            .name{
+                span{
+                    font-size: 11px;
+                    font-weight: 500;
+                    font-family:$title-font;
+                    text-transform: uppercase;
+                    color: #2d2d2d;
+                    &.image{
+                        margin-right: 70px;
+                        @media #{$mobile_device} {
+                            margin-right: 20px;
+                        }
+                    }
+                    &.Description{
+
+                    }
+                }
+            }
+            .Price-name{
+                span{
+                    font-size: 11px;
+                    font-weight: 500;
+                    font-family:$title-font;
+                    text-transform: uppercase;
+                    color: #2d2d2d;
+                }
+            }
+        }
+        .single_cart_description{
+            margin-top: 8px;
+            padding: 40px;
+            margin-bottom: 2px;
+            @media #{$mobile_device} {
+                margin-top: 0;
+                padding: 20px 15px;
+                margin-bottom: 2px;
+            }
+            .single_cart_left{
+                margin-bottom: 20px;
+                @media #{$mobile_device} {
+                    display: block !important;
+                }
+                .card_inner{
+                    @media #{$mobile_device} {
+                        display: block !important;
+                    }
+                    .image{
+                        margin-right: 23px;
+                        @media #{$mobile_device}{
+                            display: inline-block;
+                            float: left;
+                            margin-right: 15px;
+                        }
+                    }
+                    .single_cart_heading{
+                        h3{
+                            font-size: 16px;
+                            font-family: $title-font;
+                            font-weight: 500;
+                            margin-bottom: 8px;
+                            line-height: 21px;
+
+                        }
+                        p{
+                            color: #a0a0a0;
+                            font-size: 12px;
+                            font-weight: 300;
+                            font-family: $bodyfont;
+                            margin-bottom: 0;
+                            line-height: 21px;
+                            @media #{$mobile_device} {
+                                margin: 15px 0;
+                            }
+                            span{
+                                margin-right: 26px;
+                                @media #{$mobile_device} {
+                                    margin-right: 8px;
+                                }
+                                a{
+                                    color: #000000;
+                                    padding-bottom: 1px;
+                                    @include transition(.5s);
+                                    border-bottom: 2px solid transparent;
+                                    &:hover{
+                                        border-bottom: 2px solid #bbbbbb;
+                                        padding-bottom: 0;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .card_des_prise{
+                    span{
+                        font-size: 24px;
+                        font-weight: 700;
+                        font-family: $title-font;
+                        margin-right: 75px;
+                    }
+                    i{
+                        color: #999999;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart_button_area{
+    margin-top: 30px;
+    padding: 0 40px;
+    @media #{$mobile_device} {
+        padding: 20px 0;
+        background: #fff;
+        margin-top: -1px;
+    }
+    @media #{$tablet_device} {
+        padding: 20px 20px;
+        background: #fff;
+        margin-top: -2px;
+    }
+    @media #{$mid_device} {
+        padding: 20px 20px;
+        background: #fff;
+        margin-top: -2px;
+    }
+    .boxed-btn-gray{
+        @media #{$mobile_device} {
+            margin-bottom: 30px;
+        }
+    }
+    @media #{$mobile_device} {
+        display: block !important;
+        text-align: center;
+    }
+}
+.total_cart_area {
+	border: 1px solid #dddddd;
+	text-align: center;
+    padding: 60px 0;
+    margin-top: 31px;
+    padding: 80px 0;
+    span{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $title-font;
+        color: #888888;
+    }
+    h1{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: $title-font;
+        margin-top: 32px;
+        margin-bottom: 63px;
+        @media #{$mobile_device} {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        @media #{$tablet_device} {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        @media #{$mid_device} {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+    a{
+
+    }
+    p{
+        font-family: $bodyfont;
+        color: #888888;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+}
+// popup
+.cart_details_popup-show{
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    @media #{$mobile_device}{
+        display: none;
+    }
+}
+.cart_details_popup_upper{
+    
+}
+.cart_details_popup{
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    // max-width: 800px;
+    // margin: auto;
+    // padding: 80px 0;
+    // background: #fff;
+    // z-index: 9999;
+    .card-popup-header{
+        text-align: center;
+        .card-icon{
+            width: 60px;
+            height: 60px;
+            background: rgb(22, 228, 129);
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+            margin: auto;
+            img{
+
+            }
+        }
+        h3{
+            font-size: 32px;
+            font-weight: 500;
+            font-family: $title-font;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            @media #{$mobile_device} {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .single_cart_description{
+        margin-top: 8px;
+        padding: 40px;
+        margin-bottom: 2px;
+        @media #{$mobile_device}{
+            padding: 20px;
+            margin-top: -1px;
+        }
+        @media #{$tablet_device}{
+            padding: 20px;
+            margin-top: -2px;
+        }
+        @media #{$mid_device}{
+            padding: 20px;
+            margin-top: -2px;
+        }
+        .single_cart_left{
+            @media #{$mobile_device} {
+                display: block !important;
+            }
+            @media #{$mid_device} {
+                // display: block !important;
+            }
+
+            margin-bottom: 20px;
+            .card_inner{
+                @media #{$mobile_device} {
+                    display: block !important;
+                }
+                @media #{$tablet_device} {
+                    display: block !important;
+                }
+                @media #{$mid_device} {
+                    // display: block !important;
+                }
+                .image{
+                    margin-right: 23px;
+                    @media #{$mobile_device} {
+                        float: left;
+                        margin-right: 8px;
+                    }
+                    @media #{$tablet_device} {
+                        float: left;
+                        margin-right: 8px;
+                    }
+                    @media #{$mid_device} {
+                        float: left;
+                        margin-right: 8px;
+                    }
+                }
+                .single_cart_heading{
+                    h3{
+                        font-size: 16px;
+                        font-family: $title-font;
+                        font-weight: 500;
+                        margin-bottom: 8px;
+                        line-height: 21px;
+
+                    }
+                    p{
+                        color: #a0a0a0;
+                        font-size: 12px;
+                        font-weight: 300;
+                        font-family: $bodyfont;
+                        margin-bottom: 0;
+                        line-height: 21px;
+                        span{
+                            margin-right: 26px;
+                            @media #{$mobile_device} {
+                                margin-right: 8px;
+                            }
+                            a{
+                                color: #000000;
+                                padding-bottom: 1px;
+                                @include transition(.5s);
+                                border-bottom: 2px solid transparent;
+                                &:hover{
+                                    border-bottom: 2px solid #bbbbbb;
+                                    padding-bottom: 0;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .card_des_prise{
+                span{
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: $title-font;
+                    margin-right: 0px;
+                }
+                i{
+                    color: #999999;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// hide
+// @media #{$mobile_device} {
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     transform: translateY(-50%);
+// }
+// @media #{$tablet_device} {
+//     position: absolute;
+//     top: 50%;
+//     left: 30px;
+//     bottom: 0;
+//     right: 30px;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     transform: translateY(-50%);
+// }
+// @media #{$mid_device} {
+//     position: absolute;
+//     top: 50%;
+//     left: 30px;
+//     bottom: 0;
+//     right: 30px;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     min-width: 300px;
+//     padding: 30px 0;
+//     transform: translateY(-50%);
+// }
+
+.cart_details_popup_upper{ 
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // // background: rgba(0,0,0,.5);
+    // z-index: 9999999;
+    .cart_details_popup_inner{
+        width: 800px;
+        height: 90%;
+        margin: auto;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        @media #{$tablet_device} {
+            width: 700px;
+            height: 85%;
+        }
+        @media #{$mid_device} {
+            height: 84%;
+        }
+        .cart_details_popup{
+            padding: 80px 0;
+            max-width: 800px;
+            background: #fff;
+            z-index: 9;
+            z-index: 99999999;
+            position: relative;
+        }
+        @media #{$mobile_device}{
+            display: none;
+        }
+        @media #{$mobile_device}{
+            display: none;
+        }
+    }
+}

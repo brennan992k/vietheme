@@ -1,0 +1,17 @@
+   label.error{
+        color: red;
+    }
+    .invalid-feedback{
+    display: inline-block !important;
+   }
+   .Pagination{
+       margin-top: 0px
+   }
+   .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+   }
+   .affiliate_item input{
+    width: 100%;
+   }

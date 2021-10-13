@@ -1,0 +1,90 @@
+
+/* 
+
+<link rel="stylesheet" href="{{asset('public/backEnd/modules.css')}}">
+
+ */
+/* blog */
+
+.blog_tag{
+    font-size:1em
+}
+.blog_description{
+    font-size: 12px !important;
+}
+.blog_creator{
+    float:right
+}
+span.badge.badge-pill.badge-primary {
+    background: #7c32ff;
+    white-space: pre-line;
+}
+.about_system_table{
+width:100%; box-shadow: none;
+}
+.payment_method_field_name{
+    display:none
+}
+.site_image_color{
+    width: 200px; height: 100px;
+}
+.site_image_spinner{
+    position: absolute;left: 40%;top: 40%;display: none;
+}
+.site_image_upload_a{
+    text-decoration: none;
+}
+.site_image_hidden_bg_image{
+    display: none
+}
+.update_payment_method_field_wrapper{
+    display:block
+}
+.priority_table{
+    width: 100%;
+}
+  .form-control:disabled{
+        background-color: #FFFFFF;
+    }
+        .smtp_wrapper{
+        display: none;
+    }
+    .smtp_wrapper_block{
+        display: block;
+    }
+       .bg-color_general_settings{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        padding: 0px;
+        margin: 0 auto;
+    }
+      .modal-content .modal-body {
+            padding: 10px !important;
+        }
+
+         .ticket_admin_edit{
+        vertical-align: inherit;
+    }
+    .ticket_complete{
+        color:#15a000
+    }
+    .ticket_close{
+        color:#ddd
+    }
+    .ticket_priority{
+    color: #e1d200
+    }
+    .ticket_category{
+    color: #7e0099
+    }
+    .ticket_form{
+        display:block !important; margin-top: -44px;
+    }
+    .ticket_username_input{
+        width:30% !important
+    }
+
+    .demo_view{
+        pointer-events: none;
+    }

@@ -1,0 +1,188 @@
+.categori-menu-area {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    margin-top: -100px;
+    &::before {
+        content: "";
+        background: #fff;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        opacity: 0.1;
+    }
+    .catagori-menu {
+        max-width: 1610px;
+        margin: auto;
+        @media #{$large_device} {
+            max-width: 1200px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: $bodyfont;
+                    padding: 38px 45px;
+                    display: inline-block;
+                    position: relative;
+                    z-index: 1;
+                    @media #{$mid_device} {
+                        padding: 38px 15px;
+                    }
+                    @media #{$large_device} {
+                        padding: 38px 20px;
+                    }
+                    &.active {
+                        position: relative;
+                        z-index: 9;
+                    }
+                    &::before {
+                        content: "";
+                        background: #fff;
+                        transform: scaleX(0);
+                        height: 3px;
+                        width: 100%;
+                        position: absolute;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        @include transition(0.3s);
+                    }
+                }
+                &:hover>a::before {
+                    transform: scaleX(1);
+                }
+                &:hover>.catagori-submenu-area {
+                    opacity: 1;
+                    visibility: visible;
+                    // top: 100%;
+                }
+            }
+        }
+    }
+}
+
+.catagori-submenu-area {
+    padding: 60px 0 45px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(0.3s);
+    border-bottom: 1px solid #eee;
+    .catagori-content {
+        max-width: 1610px;
+        margin: auto;
+        @media #{$mid_device} {
+            max-width: 900px;
+        }
+        @media #{$large_device} {
+            max-width: 1000px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    display: inline-block;
+                    font-family: $bodyfont;
+                    font-size: 12px;
+                    font-weight: 600;
+                    border: 1px solid #e2e6eb;
+                    color: #222222;
+                    padding: 7px 24px 8px 24px;
+                    display: inline-block;
+                    margin: 0px 5px 14px 0px;
+                    position: inherit;
+                    span {
+                        font-weight: 300;
+                        font-family: $bodyfont;
+                        color: #777777;
+                    }
+                    &:hover {
+                        @include box-shadow(0px 10px 20px 0px rgba(115, 26, 251, 0.3));
+                        @extend %cat-hover;
+                        border: 1px solid transparent;
+                        color: #fff !important;
+                        span {
+                            color: #fff !important;
+                        }
+                    }
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .prise-form {
+            input {
+                width: 200px;
+                height: 40px;
+                padding-left: 25px;
+                border: 1px solid #e2e6eb;
+                margin-right: 5px;
+                &::placeholder {
+                    font-size: 12px;
+                    color: #888888;
+                    font-family: $bodyfont;
+                }
+            }
+            button {
+                width: 90px;
+                display: inline-block;
+                font-family: $bodyfont;
+                font-weight: 600;
+                font-size: 12px;
+                color: #fff;
+                background-image: -moz-linear-gradient( 0deg, rgb(130, 40, 251) 0%, rgb(165, 43, 232) 70%, rgb(200, 46, 213) 100%);
+                background-image: -webkit-linear-gradient( 0deg, rgb(130, 40, 251) 0%, rgb(165, 43, 232) 70%, rgb(200, 46, 213) 100%);
+                background-image: -ms-linear-gradient( 0deg, rgb(130, 40, 251) 0%, rgb(165, 43, 232) 70%, rgb(200, 46, 213) 100%);
+                @include transition(0.3s);
+                border: 0;
+                padding: 10px 0 11px 0;
+                position: relative;
+                cursor: pointer;
+                top: -2px;
+                &:hover {
+                    @include box-shadow(0px 10px 20px 0px rgba(115, 26, 251, 0.3));
+                }
+            }
+        }
+    }
+    &.active-submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.submenu-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+    font-size: 12px;
+    border: 1px solid #e3e7eb;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #222;
+    @include transition(0.3s);
+    &:hover {
+        color: #fff;
+        background: #7c32ff;
+        border: 1px solid transparent;
+    }
+}

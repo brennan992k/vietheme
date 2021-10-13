@@ -1,0 +1,14 @@
+
+label.error{
+    top: 84% !important;
+    color: red !important;
+    right: 0px !important;
+}
+
+.red_alart{
+    color: red !important;
+}
+  .required_icon{
+    font-size: 18px;
+}
+.error .text-red{ color: red !important;}

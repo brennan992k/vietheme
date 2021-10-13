@@ -1,0 +1,9 @@
+.boxed-btn,.boxed-btn-white {
+    padding: 11px 15px;
+}
+.payment_confim_area .payment_confirm_prise_wrap .payment_wrap_body .payment_btn_prise a {
+    margin-right: 65px;
+}
+.payment_confim_area .payment_confirm_prise_wrap .payment_wrap_body .payment_btn_prise .net_prise {
+    width:150px;
+}

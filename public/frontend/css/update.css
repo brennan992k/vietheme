@@ -1,0 +1,350 @@
+/* update css  */
+
+body {
+    overflow-x: hidden;
+}
+
+.header-area .profile-area .profile_dropdwon {
+    width: auto !important;
+}
+
+.header-area .main-menu ul li {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* .header-area .main-menu ul li a{
+    padding: 10px 0;
+} */
+
+.header-area .main-menu ul li .submenu {
+    position: absolute;
+    left: 0;
+    width: 220px;
+    left: 0;
+    background: #fff;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    top: 120%;
+    /* transform: translateY(70px); */
+    z-index: 1;
+}
+
+.header-area .main-menu ul li .submenu li {
+    display: block !important;
+    text-align: left;
+    margin: 0;
+}
+
+.header-area .main-menu ul li .submenu li a {
+    color: #000;
+    margin: 0;
+    font-size: 15px;
+    color: #555555;
+    font-weight: 400;
+    display: block;
+    padding: 11px 16px;
+    transition: .3s;
+}
+
+.header-area .main-menu ul li .submenu li a:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    color: #fff;
+}
+
+.header-area .main-menu ul li:hover>a {
+    color: #fff;
+}
+
+.header-area .main-menu ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    /* transform: translateY(40px); */
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 2nd level  */
+
+.header-area .main-menu ul li .submenu li ul {
+    left: 110%;
+    top: 0;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header-area .main-menu ul li .submenu>li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+}
+
+.header-area .main-menu ul li .submenu li:hover>a {
+    background-image: -moz-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(199, 56, 216) 0%, rgb(162, 53, 236) 30%, rgb(124, 50, 255) 100%);
+    color: #fff;
+}
+
+
+/* sliknav  */
+
+.slicknav_nav .slicknav_arrow {
+    float: right;
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+}
+
+.slicknav_nav .slicknav_arrow i {
+    display: block !important;
+}
+
+.slicknav_menu .slicknav_nav {
+    padding: 10px 0;
+}
+
+#livesearch {
+    position: absolute !important;
+    left: 15px;
+    right: 15px;
+}
+
+
+/* btn buton  */
+
+.boxed-btn.boxed_button input {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    margin-bottom: 0 !important;
+    padding: 0;
+}
+
+.boxed-btn.boxed_button {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    font-size: 12px;
+    padding: 6px 18px;
+    text-transform: capitalize;
+}
+
+.DM_uploader h5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #888888;
+    margin-bottom: 0;
+}
+
+.DM_uploader.d-flex.align-items-center.justify-content-between {
+    background: #fff;
+    padding: 10px 25px;
+}
+
+.mb_20px {
+    margin-bottom: 20px;
+}
+
+.latest-goods-area .portfolio-menu.portfolio-menu2 {
+    text-align: center !important;
+}
+
+
+/* new media query */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+    .header-area .main-menu {
+        text-align: center;
+    }
+    .main-menu {
+        display: none !important;
+    }
+    .main_user-pro_wrap {
+        display: none !important;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+.latest-goods-area .portfolio-menu.portfolio-menu2 {
+    text-align: right !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Deposite_Custom_tabs                            */
+/* -------------------------------------------------------------------------- */
+
+.Deposite_Custom_tabs li a{
+    border: 0 !important;
+    display: block !important;
+    background: #EDEDED !important;
+    border-radius: 5px;
+}
+.deposite_title{
+    display: block;
+    background: #454545 !important;
+    color: #fff;
+    font-size: 20px;
+}
+
+.deposite_payment_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.single_deposite_item{
+    background: #EDEDED;
+    border-radius: 5px;
+}
+.single_deposite_item .deposite_header {
+    background: #c766e8;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+    transition: .3s;
+}
+.single_deposite_item .deposite_button{
+    padding: 40px 0;
+    border-radius:  0 0 5px 5px;
+}
+.single_deposite_item:hover .deposite_header{
+    background-image: -webkit-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+}
+.single_deposite_item.active .deposite_header{
+    background-image: -webkit-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+}
+
+/* --------------------------------- payout --------------------------------- */
+.payout_tab_wrap{
+    border: 0 !important;
+}
+.single_payout_item{
+    background: #EDEDED;
+    border-radius: 5px;
+}
+.single_payout_item .deposite_header{
+    background: #454545;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+    transition: .3s;
+}
+.single_payout_item .deposite_button{
+    padding: 40px 0;
+    border-radius:  0 0 5px 5px;
+}
+.single_payout_item:hover .deposite_header{
+    background: #b737e0;
+}
+.single_payout_item.active .deposite_header{
+    background: #b737e0;
+}
+.payout_tab_wrap .active .single_payout_item .deposite_header{
+    background: #b737e0;
+}
+.payout_tab_wrap .nav-link{
+    border: 0 !important;
+}
+.pb_60 {
+    padding-bottom: 60px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               update css here                              */
+/* -------------------------------------------------------------------------- */
+/* mobile device  */
+@media (max-width: 767px){
+    .banner-area3 .banner-area-inner .banner-info {
+        margin-bottom: 100px;
+    }
+    .overlay_with_btn .boxed-btn,.overlay_with_btn .boxed-btn-white{
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+    .account-area.account-area2 .dashboard_iner {
+        padding: 30px 20px;
+    }
+    .user_profile .portfolio_list .single_portfolio_list .portflio_thumb .thumb_heading {
+        margin-top: 10px;
+    }
+    .single_payout_item .deposite_header {
+        font-size: 14px;
+    }
+    .single_payout_item .deposite_button{
+        padding: 10px 0;
+        
+    }
+    .single_payout_item .deposite_button p{
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .main_user-pro_wrap {
+        display: block !important;
+    }
+    .main_user-pro_wrap > a{
+        display: none !important;
+    }
+    .header-area .profile-area > a {
+        padding: 7px 11px;
+        margin-top: 0;
+    }
+    /* .profile-area .user_author_pro {
+        display: none !important;
+    } */
+    .supper_buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .supper_buttons form {
+        margin-bottom: 10px;
+    }
+}
+
+.customer_payment_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}

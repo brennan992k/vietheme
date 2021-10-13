@@ -1,0 +1,70 @@
+
+@import 'varriable.scss';
+@import 'reset';
+@import 'mixins.scss';
+@import 'responsive.scss';
+@import 'extend.scss';
+@import 'section-title.scss';
+@import 'slick-nav.scss';
+
+
+// theme-sas file
+// header
+@import 'header';
+// banner
+@import 'banner';
+// features
+@import 'features';
+
+// features
+@import 'latest-good';
+
+// footer
+@import 'footer';
+
+// footer
+@import 'categori';
+
+// footer
+@import 'theme-details.scss';
+
+// footer
+@import 'custom_check_box';
+
+// cart
+@import 'cart';
+
+// checkout
+@import 'checkout';
+
+// payment
+@import 'payment';
+// payment
+@import 'coupons';
+
+// payment
+@import 'privacy_polecy';
+// payment
+@import 'accordion';
+// payment
+@import 'contact';
+// payment
+@import 'pricing';
+// payment
+@import 'knowledge';
+
+// payment
+@import 'login_resiter';
+// payment
+@import 'upload';
+// payment
+@import 'tiket_details';
+// payment
+@import 'account_setting';
+// payment
+@import 'user_profile';
+
+// payment
+@import 'author_settings_profile';
+
+@import '_update_css.scss';

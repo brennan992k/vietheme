@@ -1,0 +1,120 @@
+#accordion,#accordion2{
+    button{
+        font-size: 16px;
+        font-family: $title-font;
+        font-weight: 500;
+        color: #000000;
+        @media #{$mobile_device} {
+            font-size: 14px;
+        }
+    }
+    .card{
+        margin-bottom: 20px;
+        border-radius: 0;
+        border: 0 !important;
+        background: #fff;
+        // padding: 17px 3px 0 3px;
+        .card-header {
+            background-color: transparent;
+            padding: 4px 14px;
+            border: 0 !important;
+            @media #{$mobile_device} {
+                padding: 4px 0;
+            }
+        }
+        .card-body{
+            font-size: 14px;
+            padding: 25px 30px 10px 30px;
+            font-family: $bodyfont;
+            color: #888;
+            line-height: 26px;
+            border-top: 1px solid #fafafa;
+            @media #{$mobile_device} {
+                padding: 25px 20px 10px 20px;
+            }
+        }
+        .collapse {
+            &.show{
+                background: #fff;
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+    h5{
+        position: relative;
+        z-index: 1;
+        font-family: $title-font;
+        padding: 17px 0;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        span{
+            @media #{$mobile_device} {
+                display: none;
+            }
+            @media #{$large_device} {
+                display: none;
+            }
+        }
+        button.btn.btn-link{
+            &:after{
+                position: absolute;
+                content: "\e648";
+                top: 50%;
+                right: 18px;
+                height: auto;
+                font-family: 'themify';
+                font-size: 16px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            }
+            &:focus {
+                outline: none;
+                text-decoration: none;
+            }
+            @media #{$mobile_device} {
+                // padding-left: 0;
+            }
+        }
+        button.btn.btn-link.collapsed{
+            &:after{
+                content: "\e64b";
+                color: #000000;
+                font-size: 16px;
+            }
+            color: #000000;
+            @media #{$mobile_device} {
+                // padding-left: 0;
+            }
+        }
+
+    }
+    
+    .btn-link:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+    .btn{
+        text-align: left !important;
+    }
+}
+
+.faq-_inner_area{
+    padding: 80px 40px 60px 40px;
+    @media #{$mobile_device} {
+        padding: 0;
+    }
+}
+
+
+// load more? :::::>>>>
+// .load-content{
+//    opacity: 0;
+//    display: none;
+//    transition: .5s;
+//     &.active{
+//         opacity: 1;
+//         display: block;
+//     }
+// }

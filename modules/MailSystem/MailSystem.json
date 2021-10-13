@@ -1,0 +1,17 @@
+{
+    "MailSystem": {
+        "migration": [
+        ],
+        "names": [
+        ],
+        "versions": [
+            "0.1"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is MailSystem Module for MailSystem. Thanks for using."
+        ]
+    }
+}

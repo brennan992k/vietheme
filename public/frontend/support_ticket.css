@@ -1,0 +1,17 @@
+.wide ul{
+     z-index: 999 !important;
+ }
+ .note-popover{
+     display: none !important;
+ }
+ .modal-backdrop{
+     z-index: 9;
+ }
+
+.tiket-content .main_ticket_wrap.tick_style{
+    padding: 15px 6px 15px 15px;
+}
+.tiket-content .tickt_mail .mail_mail p.para_style{
+    margin-top: 0;
+    margin-bottom: 0;
+}

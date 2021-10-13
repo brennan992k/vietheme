@@ -1,0 +1,325 @@
+.login_resister_area{
+    .single_resister_sildbar{
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        padding: 0 140px;
+        display: table;
+        // width: 100%;
+        width: 560px;
+        @media #{$mobile_device} {
+            width: 100%;
+            padding: 0 30px;
+            overflow: hidden;
+        }
+        @media #{$tablet_device} {
+            width: 100%;
+        }
+        @media #{$mid_device} {
+            width: 100%;
+        }
+        @media #{$large_device} {
+            width: 100%;
+        }
+        &::before{
+            content: "";
+            @extend %catagori-bg;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+              
+        }
+        &::after{
+            content: "";
+            background-image: url(../img/pattern/2.png);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+              
+        }
+        .logo{
+            margin-top: 25px;
+        }
+        .resister_text{
+            position: absolute;
+            top: 50%;
+            left: 140px;
+            right: 0;
+            transform: translateY(-50%);
+            @media #{$mobile_device}{
+                left: 35px;
+            }
+            @media #{$mid_device}{
+                left: 35px;
+            }
+            @media #{$large_device}{
+                left: 35px;
+            }
+            h3{
+                color: #fff;
+                font-size: 32px;
+                line-height: 45px;
+                margin-bottom: 39px;
+
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                font-family: $bodyfont;
+                color: #ffffff;
+                line-height: 26px;
+            }
+        }
+        .resister_social_links{
+            position: absolute;
+            bottom: 40px;
+            left: 140px;
+            @media #{$mobile_device}{
+                left: 15px;
+            }
+            @media #{$mid_device}{
+                left: 35px;
+            }
+            @media #{$large_device}{
+                left: 35px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        width: 50px;
+                        height: 50px;
+                        font-size: 18px;
+                        color: #fff;
+                        background: rgba(255,255,255,.10) ;
+                        display: block;
+                        text-align: center;
+                        line-height: 50px;
+                        margin-right: 5px;
+                        &:hover{
+                            background: #fff;
+                            color: #1a1a1a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-login-form{
+        position: relative;
+        .resistration-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            @media #{$large_device} {
+                overflow: hidden;
+            }
+            @media #{$mobile_device} {
+                display: none;
+            }
+            @media #{$tablet_device} {
+                display: none;
+            }
+            @media #{$mid_device} {
+                display: none;
+            }
+        }
+        .login_form_content{
+            height: 100vh;
+            width: 100%;
+            display: table;
+            .login_form_field {
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 62px;
+                @media #{$mobile_device} {
+                   padding-left: 0; 
+                }
+                @media #{$tablet_device} {
+                   padding-left: 0; 
+                }
+            }
+            h3{
+                font-size: 30px;
+                font-weight: 500;
+                color: #222222;
+                
+            }
+            p{
+                font-size: 14px;
+                color: #777777;
+                margin-bottom: 30px;
+
+            }
+        }
+        .resiter{
+            color: #000000;
+            font-size: 13px;
+            font-family: $title_font;
+            font-weight: 700;
+            background: #fafafa;
+            padding: 15px 41px;
+            display: inline-block;
+            position: absolute;
+            right: 140px;
+            top: 25px;
+            z-index: 999;
+            @media #{$mobile_device} {
+                right: 40px;
+            }
+            @media #{$tablet_device} {
+                right: 40px;
+            }
+            @media #{$mid_device} {
+                right: 40px;
+            }
+            @media #{$large_device} {
+                right: 40px;
+            }
+            &:hover{
+                color: #fff;
+                @extend %primary-btn;
+            }
+        }
+        label{
+            font-size: 11px;
+            font-family: $title_font;
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 400;
+            margin-bottom: 7px;
+            span{
+                color: #ff0000;
+            }
+        }
+        input{
+            width: 100%;
+            background: #fafafa;
+            height: 50px;
+            border: 0;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 13px;
+                color: #888888;
+                font-family: $bodyfont;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
+        button{
+            border: none;
+            cursor: pointer;
+        }
+        .forgot-pass-link a {
+            color: #888;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: $bodyfont;
+            &:hover{
+                color: #000;
+            }
+        }
+        .forgot-pass{
+            margin-bottom: 30px;
+            margin-top: 3px;
+            .checkit{
+                .chebox-style-custom{
+                    input{
+                        label{
+
+                        }
+                    }
+                }
+                span{
+                    &.keep-me-login{
+                        font-size: 14px;
+                        color: #888888;
+                        font-family: $bodyfont;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .capca_wrapper {
+            border: 1px solid #ececec;
+            padding: 14px 20px 14px 25px;
+            background: #fafafa;
+            max-width: 330px;
+            margin-bottom: 40px;
+            .chapca_text{
+                font-size: 14px;
+                color: #000;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+.supper_buttons {
+    // display: grid;
+    // grid-template-columns: repeat(3,auto);
+    display:flex;
+    form{
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .boxed-btn{
+        font-size: 12px;
+        padding: 8px 13px;
+        margin: 0 !important;
+
+    }
+}
+
+.login_resister_area .main-login-form .checkit .chebox-style-custom{
+    input{
+        height: 10px;
+    }
+}
+
+
+.note-editor.note-frame {
+    border: 1px solid #ececec !important; 
+}
+.note-editor{
+    .btn-group-sm > .btn, .btn-sm {
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            // background: rgb(118, 50, 126);
+        background: #fff;
+        &:hover{
+            // @extend %primary-btn;
+            // color: #fff;
+        }
+    }
+    .btn.focus, .btn:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    // .note-icon-caret {
+    //     font-size: 10px;
+    // }
+}
+.note-popover .popover-content .note-color .dropdown-toggle, .panel-heading.note-toolbar .note-color .dropdown-toggle {
+    width: auto !important;
+    padding-left: 5px;
+}

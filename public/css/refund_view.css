@@ -1,0 +1,30 @@
+.boxed-btn{
+    width: 100%
+}
+.couponAdd{
+    padding: 0px !important;
+}
+label.error{
+    color: red;
+}
+.invalid-feedback{
+display: inline-block !important;
+}
+.trash{
+   cursor: pointer;
+}
+.Pagination{
+   margin-top: 0px
+}
+.account-area.account-area2 .refunds_area .refund_wrap .re_bak {
+background: rgba(108, 39, 255, 0.05); 
+}
+.re_bak span{
+
+}
+.re_bak span,.re_bak i {
+   color: #7f5de8 !important;
+}
+.popover{
+   display: none;
+}

@@ -1,0 +1,17 @@
+{
+    "Ticket": {
+        "migration": [
+        ],
+        "names": [
+        ],
+        "versions": [
+            "0.1"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is Ticket Module for Ticket. Thanks for using."
+        ]
+    }
+}

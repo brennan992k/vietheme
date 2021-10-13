@@ -1,0 +1,98 @@
+.button.stripe-button-el{
+    display: none !important;
+}
+.account_tabs_pin .nav .nav-item {
+margin-bottom: -1px;
+width: 25% !important;
+height: 180px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.nice-select.open .list {
+    z-index: 999;
+}
+.modal-backdrop{
+    z-index: 999;
+}
+.form-group label:before{
+    display: none;
+}
+.form-control {
+display: block !important;
+width: 100% !important;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+height: 40px ! important;
+border-radius: 0;
+padding: 15px !important;
+}
+button.close {
+position: absolute;
+right: 0;
+top: 15px;
+right: 15px;
+}
+.popover{
+display: none;
+}
+label.error{
+color: red;
+display: block !important;
+}
+.invalid-feedback{
+display: inline-block !important;
+}
+.bank_deposit_input{
+height: 50px;
+width: 100%;
+padding-left: 25px;
+background: #fff;
+border: none;
+margin-bottom: 20px;
+}
+.bank_content_box{
+margin-left:15%;
+margin-top:5%;
+
+}
+.bank_add_button{
+margin-left:20%;
+
+}
+.add-deposit-boxed-btn:hover {
+    box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+    color: #fff;
+}
+.add-deposit-boxed-btn, .boxed-btn-white {
+    padding: 11px 15px;
+}
+.add-deposit-boxed-btn, .boxed-btn-gray:hover, .Pagination ul li a.active, .Pagination ul li a:hover, .boxed-btn-white:hover, .header-area .profile-area>a:hover, .theme-side-bar1 .progressBar-area .single-progress-bar .progress .progress-bar, .my_coupon table tr td.edit-buttons button.edit, .my_coupon table tr td.edit-buttons button.Restore, .contact_area .form-contact button.boxed-btn, .login_resister_area .main-login-form .resiter:hover, .tiket_area .tiket-nav a.active, .upload_image_overlay i, .statement_details .more_options a:hover, .statement_details .more_options a.hover-btn {
+    background-image: -moz-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+    background-image: -webkit-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+    background-image: -ms-linear-gradient( 0deg, #7c32ff 0%, #a235ec 70%, #c738d8 100%);
+}
+.add-deposit-boxed-btn {
+    color: #fff;
+    font-size: 13px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+}

@@ -1,0 +1,169 @@
+.checkout_area{
+    .checkout-form{
+        margin-top: -4px;
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $title_font;
+            text-transform: capitalize;
+            color: #333333;
+        }
+        label{
+            font-size: 11px;
+            font-family: $title_font;
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 400;
+            margin-bottom: 7px;
+            span{
+                color: #ff0000;
+            }
+        }
+        input{
+            width: 100%;
+            background: #fafafa;
+            height: 50px;
+            border: 0;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 13px;
+                color: #888888;
+                font-family: $bodyfont;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .check-out-btn{
+        text-align: right;
+        margin-top: 25px;
+        @media #{$mobile_device} {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        button{
+            border: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.your_order{
+    padding: 30px 28px 43px 28px;
+    border: 1px solid #ddd;
+    @media #{$tablet_device} {
+        margin-top: 30px;
+    }
+    @media #{$mobile_device} {
+        margin-top: 20px;
+    }
+    .order_header{
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $title_font;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            margin-bottom: 10px;
+        }
+        border-bottom: 1px solid #ddd;
+    }
+    .products_total_list{
+        .products_total_list-heder{
+            padding-top: 20px;
+            padding-bottom: 11px;
+            span{
+                color: #555555;
+                font-size: 11px;
+                font-weight: 700;
+                font-family: $title_font;
+                text-transform: uppercase;
+            }
+            border-bottom: 1px solid #eeeeee;
+        }
+        ul{
+            li{
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                padding-top: 16px;
+                padding-bottom: 18px;   
+                span{
+                    font-family: $bodyfont;
+                    font-weight: 300;
+                    color: #888888;
+                    font-size: 12px;
+                }
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+    .products_list_bottom{
+        padding-top: 11px;
+        text-align: right;
+        @include flexbox();
+        @include align-items(center);
+                -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        span{
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $title_font;
+            color: #333333;
+            &.prise_tag{
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $title_font;
+                color: #333333;
+                padding-left: 53px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    color: #888;
+    border-radius: 0;
+    border: 0;
+    background: #fafafa;
+    padding-left: 25px;
+    font-family: $bodyfont;
+    font-weight: 300;
+    margin-bottom: 15px;
+}

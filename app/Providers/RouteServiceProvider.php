@@ -2,10 +2,7 @@
 
 namespace App\Providers;
 
-use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
@@ -18,6 +15,15 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
+
+    /**
+     * This namespace is applied to your controller routes.
+     *
+     * In addition, it is set as the URL generator's root namespace.
+     *
+     * @var string
+     */
+    protected $namespace = 'App\Http\Controllers';
 
     /**
      * The controller namespace for the application.
@@ -35,29 +41,77 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->configureRateLimiting();
-
-        $this->routes(function () {
-            Route::prefix('api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/api.php'));
-
-            Route::middleware('web')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/web.php'));
-        });
+        parent::boot();
     }
 
-    /**
-     * Configure the rate limiters for the application.
+     /**
+     * Define the routes for the application.
      *
      * @return void
      */
-    protected function configureRateLimiting()
+    public function map()
     {
-        RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
-        });
+        $this->mapApiRoutes();
+
+        $this->mapWebRoutes();
+        $this->mapVendorRoutes();
+        $this->mapUserRoutes();
+        $this->mapAdminRoutes();
+        // $this->mapInstallRoutes();
+
+        //
+    }
+
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapWebRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web.php'));
+    }
+    protected function mapVendorRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/vendor.php'));
+    }
+    protected function mapUserRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/user.php'));
+    }
+    protected function mapAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/admin.php'));
+    }
+    protected function mapInstallRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/install.php'));
+    }
+
+    /**
+     * Define the "api" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapApiRoutes()
+    {
+        Route::prefix('api')
+             ->middleware('api')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/api.php'));
     }
 }

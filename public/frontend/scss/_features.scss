@@ -1,0 +1,23 @@
+.features-area{
+    .features-wrap{
+        margin: -20px;
+        display: block;
+        overflow: hidden;
+        @media #{$mobile_device}{
+            margin: -10px;
+        }
+        .single-features{
+            width: 20%;
+            float: left;
+            padding: 20px;
+            @media #{$mobile_device}{
+                width: 33.33333%;
+            }
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

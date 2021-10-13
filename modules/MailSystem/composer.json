@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/mailsystem",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MailSystem\\Providers\\MailSystemServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MailSystem\\": ""
+        }
+    }
+}

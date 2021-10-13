@@ -1,0 +1,168 @@
+.check-here{
+    background: #fff;
+    padding: 7px 30px;
+    label{
+        margin-bottom: 0;
+        span.checkmark{
+            font-size: 14px;
+            color: #000000;
+            position: relative;
+            top: -2px;
+            padding-left: 13px;
+            font-family: $bodyfont;
+            font-weight: 400;
+            span{
+                color: #888888;
+            }
+        }
+    }
+}
+
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 15px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .form-group input:checked + label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 5px;
+	height: 11px;
+	border: solid #000;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+.custom_check_box{
+    
+}
+
+.form-group.custom_check_box{
+    margin-bottom: 0;
+    label{
+        margin-bottom: 0 !important;
+    }
+}
+
+// new one starting here
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0 !important;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 1px solid #000;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: #7c32ff;
+  }
+  
+  // Box focus
+  &:focus + label:before {
+    // box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: #7c32ff;
+    border: 1px solid #7c32ff;
+  }
+  
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+// Demo-only styles
+// --------------
+
+.chebox-style-custom input {
+  width: auto !important;
+}
+
+
+

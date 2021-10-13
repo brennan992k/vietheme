@@ -1,0 +1,181 @@
+.custom_login_email_msg {
+    color: red;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: Quicksand;
+    font-weight: 400;
+}
+
+.password_update_profile_img {
+    width: 60%;
+}
+
+.password_update_btn {
+    pointer-events: none;
+}
+
+.add_fund_profile_img {
+    width: 60px;
+    height: 60px;
+}
+
+.dm_display_block {
+    display: block !important;
+}
+
+.dm_display_none {
+    display: none !important;
+}
+
+.state .city {
+    display: none !important;
+}
+
+.order_item_thumb {
+    width: 60px;
+    height: 40px;
+}
+
+.chart_height_250 {
+    height: 250px;
+}
+
+.chart_height_230 {
+    height: 230px;
+}
+
+.dm_min_height_600 {
+    min-height: 600px;
+}
+
+.withdraw_vendor_aligh_left {
+    text-align: left;
+}
+
+.dm_width_35_per {
+    width: 35%;
+}
+
+.dm_width_45_per {
+    width: 45%;
+}
+
+.content_list_wh_40 {
+    width: 40px;
+    height: 40px;
+}
+
+.dm_float_right {
+    float: right;
+}
+
+.dm_font_size_12 {
+    font-size: 12px !important;
+}
+
+.refund_item_w_60_h_40 {
+    width: 60px;
+    height: 40px;
+}
+
+.cart_description {
+    margin-top: 30px;
+}
+
+.signup_logo {
+    max-width: 123px;
+}
+
+.refund_view_option {
+    color: #7c32ff;
+}
+
+.singleitem_progress_bar {
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-name: slideInLeft;
+}
+
+.fund_add_form_div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dm_padding_left_40 {
+    padding-left: 40px;
+}
+
+.add_content_two_category_select {
+    display: block;
+    margin-bottom: 4%;
+}
+
+.dashboard_msg_clr {
+    color: red;
+}
+
+.dm_width_75_per {
+    width: 70%;
+}
+
+.dashboard_stripe_logo {
+    max-height: 58px;
+}
+
+.dashboard_razorpay {
+    max-height: 67px;
+}
+
+.coursor_pointer {
+    cursor: pointer;
+}
+
+.databox {
+    height: auto !important;
+}
+
+.dn {
+    display: none;
+}
+
+.mw {
+    max-width: 123px;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+.form-control:disabled {
+    background-color: #ffffff;
+}
+
+#text_left {
+    text-align: left;
+}
+
+.razorpay-payment-button {
+    display: none;
+}
+
+#forwordEarn {
+    display: none;
+}
+
+/* icon */
+/* #toast-container > .customer-info {            
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
+  background-color: rgb(193, 16, 224);
+} */
+
+.toast-success{
+    display: block;
+    background-color: #7436bb !important;
+}
+ .popover-content.note-children-container {
+    display: none;
+    }
+    .select_Staff_width{
+        width: 300px;
+    }

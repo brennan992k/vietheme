@@ -1,0 +1,662 @@
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    // padding: 25px 0;
+    padding: 0 20px;
+    @media #{$mobile_device}{
+        // padding: 10px 0;
+        padding: 0;
+        background: #1a1a1a;
+        height: 50px;
+    }
+    @media #{$tablet_device}{
+        // padding: 10px 0;
+        padding: 0;
+        background: #1a1a1a;
+        height: 50px;
+    }
+    
+    .logo-img{
+        flex-basis: 10%;
+        @media #{$mobile_device} {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 66px;
+            top: 11px;
+        }
+        @media #{$tablet_device} {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 70px;
+            top: 12px;
+        }
+        img{
+            @media #{$mobile_device}{
+                width: 100%;
+            }
+            @media #{$tablet_device}{
+                width: 100%;
+            }
+        }
+    }
+    .main_user-pro_wrap.d-flex.align-items-center.justify-content-end {
+        flex-basis: 10%;
+    }
+    .user_acc{
+        position: absolute;
+        right: 0;
+        position: absolute;
+        right: 10px;
+        top: 11px;
+        a{
+            color: #fff;
+            background: #333;
+            font-size: 14px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            &:hover{
+                @extend %primary-btn2;
+                color: #fff;
+            }
+        }
+    }
+    .main-menu{
+        text-align: center;
+        flex-basis: 60%;
+        @media #{$mid_device} {
+            flex-basis: 58%;
+        }
+        ul{
+            li{
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+                @media #{'(min-width: 1200px) and (max-width: 1400px)'} {
+                    margin: 0 5px;
+                }
+                @media #{'(min-width: 1401px) and (max-width: 1440px)'} {
+                    margin: 0 8px;
+                }
+                @media #{'(min-width: 992px) and (max-width: 1200px)'} {
+                    margin: 0 2px;
+                }
+                a{
+                    font-size: 15px;
+                    color: rgba(255,255,255,.7);
+                    font-family: $title-font;
+                    font-weight: 500;
+                    // margin: 0 30px;
+                    margin: 0 !important;
+                    padding: 38px 0;
+                    display: inline-block;
+                    @media #{'(min-width: 1200px) and (max-width: 1400px)'} {
+                        font-size: 14px;
+                    }
+                    @media #{$mid_device}{
+                        margin: 0 8px;
+                    }
+                    @media #{$large_device}{
+                        margin: 0 8px;
+                    }
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .profile-area{
+        text-align: right;
+        @media #{$mobile_device} {
+            text-align: left;
+        }
+        &>a{
+            background-color: #3d1a7d;
+            color: #fff;
+            padding: 21px 40px 21px 36px;
+            font-weight: 700;
+            font-size: 13px;
+            @include transition(.3s);
+            @media #{$mobile_device}{
+                display: block;
+                padding: 10px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            @media #{$mid_device}{
+                padding: 21px 20px 21px 20px;
+            }
+            @media #{$large_device}{
+                padding: 21px 10px 21px 10px;
+            }
+            @media #{$tablet_device}{
+                display: block;
+                padding: 20px;
+                margin-top: 0px;
+                text-align: center;
+            }
+            i{
+                color: #888888;
+                padding-right: 12px;
+            }
+            span{
+                padding: 0 8px;
+                @media #{$mid_device} {
+                    padding-left: 4px;
+                }
+            }
+            &:hover{
+                color: #fff !important;
+                @extend %primary-btn;
+                -webkit-box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+                box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+                span{
+                    color: #fff;
+                }
+                i{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.sticky {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #1a1a1a;
+        top: -70px;
+        transform: translateY(70px);
+        transition: transform 500ms ease, background 500ms ease;
+    -webkit-transition: transform 500ms ease, background 500ms ease;
+    z-index: 999;
+        .profile-area{
+            a{
+                // background: #292929;
+                &:hover{
+                    color: #fff !important;
+                    // @extend %primary-btn;
+                    // -webkit-box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+                    // box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+                    span{
+                        color: #fff;
+                    }
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .slicknav_menu .slicknav_nav {
+            top: 46px;
+        }
+    }
+}
+
+
+// updated css in 22 april
+
+/* line 91, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area {
+    text-align: right;
+    position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 91, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area {
+        width: 20px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        right: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* line 91, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area {
+        width: 20px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        right: 24px;
+    }
+}
+
+
+/* line 112, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon {
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    text-align: left;
+    width: 165px;
+    right: 0;
+    padding: 7px 0;
+    z-index: 999;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 205%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+    /* line 112, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area .profile_dropdwon {
+        top: 180%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 112, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area .profile_dropdwon {
+        top: 180%;
+    }
+}
+
+
+/* line 132, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon:before {
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 16px 12.5px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    right: 0;
+    top: -14px;
+    content: "";
+    right: 15px;
+}
+
+
+/* line 143, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .profile_hover_links {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+/* line 146, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .profile_hover_links h3 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* line 153, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .profile_hover_links ul li a {
+    color: #000;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+/* line 160, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .profile_hover_links ul li a:hover {
+    opacity: 1;
+}
+
+
+/* line 167, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .sign_out a {
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 9px 25px 0 24px;
+    display: inline-block;
+}
+
+
+/* line 172, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area .profile_dropdwon .sign_out a:hover {
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    /* line 91, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area {
+        text-align: left;
+    }
+}
+
+
+/* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro {
+    background-color: #3d1a7d;
+    color: #fff;
+    padding: 21px 40px 21px 36px;
+    font-weight: 700;
+    font-size: 13px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+    /* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        background: #333;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro {
+        padding: 21px 5px 21px 10px
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    /* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro {
+        padding: 21px 10px 21px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro {
+        display: inline-block;
+        padding: 5px 8px;
+        margin-top: 0px;
+        text-align: center;
+        border-radius: 4px;
+        background: #333;
+    }
+}
+
+@media (max-width: 767px) {
+    /* line 180, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro {
+        display: inline-block;
+        padding: 5px 8px;
+        margin-top: 0px;
+        text-align: center;
+        border-radius: 4px;
+        background: #333;
+    }
+}
+
+
+/* line 216, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro i {
+    // color: #888888;
+    color: #fff;
+    padding-right: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 216, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro i {
+        padding-right: 0;
+        color: #fff;
+    }
+}
+
+@media (max-width: 767px) {
+    /* line 216, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro i {
+        padding-right: 0;
+        color: #fff;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* line 216, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro i {
+        padding-right: 0;
+        color: #fff;
+    }
+}
+
+
+/* line 232, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro span.simple_line {
+    padding: 0 8px;
+    @media #{'(min-width: 1200px) and (max-width: 1500px)'} {
+        padding: 0;
+    }
+    @media #{'(min-width: 992px) and (max-width: 1200px)'} {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    /* line 232, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.simple_line {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 232, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.simple_line {
+        display: none;
+    }
+}
+
+
+/* line 241, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro span.name {
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    /* line 241, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.name {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 241, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.name {
+        display: none;
+    }
+}
+
+
+/* line 250, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro span.prise {
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    /* line 250, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.prise {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 250, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area a.user_author_pro span.prise {
+        display: none;
+    }
+}
+
+
+/* line 259, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro:hover {
+    color: #fff !important;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+    box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+
+/* line 264, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro:hover span {
+    color: #fff;
+}
+
+
+/* line 267, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area a.user_author_pro:hover i {
+    color: #fff;
+}
+
+
+/* line 273, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area .profile-area:hover .profile_dropdwon {
+    opacity: 1;
+    visibility: visible;
+    top: 260%;
+}
+
+@media (max-width: 767px) {
+    /* line 273, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area:hover .profile_dropdwon {
+        top: 200%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* line 273, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+    .header-area .profile-area:hover .profile_dropdwon {
+        top: 210%;
+    }
+}
+
+
+
+/* line 298, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area.sticky .profile-area a.user_author_pro {
+    background: #292929;
+}
+
+
+/* line 300, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area.sticky .profile-area a.user_author_pro:hover {
+    color: #fff !important;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+    box-shadow: 0px 10px 20px 0px rgba(108, 39, 255, 0.3);
+}
+
+
+/* line 305, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area.sticky .profile-area a.user_author_pro:hover span {
+    color: #fff;
+}
+
+
+/* line 308, ../../Arafath/366 Infix Digital Marketplace/HTML/scss/_header.scss */
+
+.header-area.sticky .profile-area a.user_author_pro:hover i {
+    color: #fff;
+}
+
+.header-area .profile-area .profile_dropdwon .profile_hover_links ul li a {
+    background: transparent;
+}
+.header-area .profile-area .profile_dropdwon .profile_hover_links ul li a:hover{
+    box-shadow: none;
+    color: #000 !important;
+    opacity: 1;
+}
+
+.header-area .profile-area .profile_dropdwon {
+    width: auto !important;
+    min-width: 200px;
+}
+
+.header-area .profile-area {
+    @media #{$mobile_device} {
+        width: auto;
+        right: 15px;
+    }
+    @media #{$tablet_device} {
+        width: auto;
+    }
+    
+}
+
+.header-area .profile-area a.user_author_pro {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+}
+.header-area .profile-area a.user_author_pro:hover {
+    box-shadow: none !important;
+}
+
+.main_user-pro_wrap .cart {
+    margin-right: 20px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    background: #000;
+    background-color: rgba(255, 255, 255, 0.06);
+    @media #{$tablet_device} {
+        margin-right: 10px;
+    }
+    @media #{$mid_device} {
+        margin-right: 5px;
+    }
+}
+
+span.badge_icon {
+	position: absolute;
+	font-size: 10px;
+	background: #fff;
+	color: #000;
+	width: 20px;
+	height: 20px;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    bottom: 5px;
+    top: auto;
+    background: #fff;
+}

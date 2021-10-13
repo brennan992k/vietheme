@@ -1,0 +1,87 @@
+.knowledge_tabs_area{
+    .my_custom_navs{
+        padding: 35px 40px 20px 40px;
+        @media #{$mobile_device} {
+            padding: 35px 25px 20px 25px;
+        }
+        @media #{$mid_device} {
+            padding: 35px 15px 20px 15px;
+        }
+        h5{
+            margin-bottom: 16px;
+        }
+        .nav{
+            a{
+                color: #888888;
+                font-size: 13px;
+                font-family: $bodyfont;
+                font-weight: 300;
+                padding: 17px 0;
+                border-bottom: 1px solid #ddd;
+                @include transition(.5s);
+                &:last-child{
+                    border: none;
+                }
+                &.active{
+                    background-image: -moz-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+                    background-image: -webkit-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+                    background-image: -ms-linear-gradient( 0deg, rgb(124,50,255) 0%, rgb(162,53,236) 70%, rgb(199,56,216) 100%);
+                    color: #fff;
+                    @include box-shadow(0px 10px 20px 0px rgba(108, 39, 255, 0.3));
+                    padding-left: 25px;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+    .my_tab_content{
+        padding: 13px 40px 17px 40px;
+        @media #{$mobile_device}{
+            padding: 13px 20px 17px 20px;
+            margin-top: 30px;
+        }
+        @media #{$tablet_device}{
+            margin-top: 30px;
+        }
+        .single_knowledge_tab{
+            ul{
+                li{
+                    border-bottom: 1px solid #ddd;
+                    padding: 21px 0;
+                    a{
+                        margin-bottom: 0;
+                        color: #888888;
+                        font-family: $title_font;
+                        font-weight: 500;
+                        @include transition(.5s);
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            right: 0;
+                            content: "\e61a";
+                            font-family: 'themify';
+                            color: #888888;
+                            font-size: 15px;
+                        }
+                        &.active{
+                            color: #000000;
+                            font-weight: 500;
+                            &::before{
+                                content: "\e622";
+                                color: #000000;
+                            }
+                        }
+                        &:hover{
+                            color: #000000;
+                        }
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+  

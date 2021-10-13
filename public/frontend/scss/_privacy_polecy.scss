@@ -1,0 +1,33 @@
+.privaci_polecy_area{
+    .privacy_inner{
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 52px;
+        @media #{$mobile_device} {
+            padding: 10px 20px 30px 20px;
+        }
+        .single_privacy{
+            padding-top: 26px;
+            padding-bottom: 12px;
+            h3{
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                font-family: $title_font;
+                margin-bottom: 24px;
+            }
+            p{
+                font-size: 14px;
+                color: #888888;
+                font-weight: 300;
+                font-family: $bodyfont;
+                line-height: 26px;
+            }
+            border-bottom: 1px solid #dddddd;
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}

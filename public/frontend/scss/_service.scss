@@ -1,0 +1,73 @@
+// service-area
+.service-area{
+    padding-top: 145px;
+    padding-bottom: 120px;
+    @media #{$tablet_device} {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    @media #{$mobile_device} {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+    background: $gray-bg;
+    .single-service{
+        padding-left: 45px;
+        padding-right: 50px;
+        border-bottom: 3px solid $theme-bg;
+        padding-bottom: 36px;
+        margin-bottom: 30px;
+        padding-top: 57px;
+        background:$white-bg;
+        @media #{$mobile_device} {
+            padding: 30px 20px;
+        }
+        @include transition(.3s);
+        .service-icon{
+            img{
+                float: left;
+                overflow: hidden;
+                width: 104px;
+                height: 104px;
+                @media #{$mobile_device} {
+                    margin-top: 0;
+                    float: none;
+                    margin-bottom: 25px;
+                }       
+            }
+        }
+        &.orange{
+            border-bottom: 3px solid $orange;
+        }
+        &.red{
+            border-bottom: 3px solid $Red-bg;
+        }
+        &.green{
+            border-bottom: 3px solid $green;
+        }
+        .service-content{
+            padding-left: 21px;
+            overflow: hidden;
+            h4{
+                font-size:$haeding-h4;
+                font-weight: normal;
+                margin-bottom: 18px;
+                @include transition(.3s);
+            }
+            @media #{$mid_device} {
+                padding-left: 20px;
+            }
+            @media #{$mobile_device} {
+                padding-left: 0px;
+            }
+        }
+        &:hover{
+            border-bottom: 3px solid $orange;
+            @include box-shadow(0px 10px 30px 0 rgba(247, 153, 96, 0.1));
+            background:$white-bg;
+            h4{
+                color: $orange;
+            }
+        }
+    }
+}

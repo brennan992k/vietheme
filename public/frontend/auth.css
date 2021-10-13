@@ -1,0 +1,19 @@
+    
+    /*
+     <link rel="stylesheet" href="{{ asset('public/css/') }}/auth.css">
+      */
+    label.error{
+        top: 84% !important;
+        color: red !important;
+        right: 0px !important;
+    }
+ 
+    .red_alart{    
+      color: red !important;
+      font-size: 11px;
+      font-weight: 600;
+    }
+      .required_icon{
+        font-size: 18px;
+    }
+   .error .text-red{ color: red !important;}
