@@ -174,6 +174,7 @@ class LoginController extends Controller
     {
         return view('auth.social_register');
     }
+
     function Password_store(Request $request)
     {
         $this->validate($request, [

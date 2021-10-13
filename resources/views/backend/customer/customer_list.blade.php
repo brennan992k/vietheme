@@ -1,6 +1,6 @@
 
 @extends('backend.master')
-<link rel="stylesheet" href="{{asset('public/backEnd/')}}/customer_list.css">
+<link rel="stylesheet" href="{{asset('public/backend/')}}/customer_list.css">
 @section('mainContent')
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">

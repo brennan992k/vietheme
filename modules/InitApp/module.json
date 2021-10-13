@@ -1,0 +1,13 @@
+{
+    "name": "InitApp",
+    "alias": "initapp",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\InitApp\\Providers\\InitAppServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -283,13 +283,13 @@
                                             <p>@lang('lang.upload_heading')</p>
                                         </div>
                                         @php
-                                                $category_details=App\ManageQuery::SelectedCategoryDetails(Session::get('categorySlect')->id);
+                                                $category_details=App\Models\ManageQuery::SelectedCategoryDetails(Session::get('categorySlect')->id);
                                                 // DB::table('item_categories')->where('id',Session::get('categorySlect')->id)->first();
                                                 $regular_recommended_price[]=explode("-",$category_details->recommended_price);
                                                 $extended_recommended_price[]=explode("-",$category_details->recommended_price_extended);
                                                 $recommended_price_commercial[]=explode("-",$category_details->recommended_price_commercial);
 
-                                                $item_fee=App\ManageQuery::FreeItemOfCategory(Session::get('categorySlect')->id);
+                                                $item_fee=App\Models\ManageQuery::FreeItemOfCategory(Session::get('categorySlect')->id);
                                                 // DB::table('item_fees')->where('category_id',Session::get('categorySlect')->id)->first();
                                             
                                         @endphp 

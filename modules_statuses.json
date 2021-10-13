@@ -1,3 +1,14 @@
 {
-    "Test": true
+    "Test": true,
+    "InitApp": true,
+    "Blog": true,
+    "HumanResource": true,
+    "KnowledgeBase": true,
+    "MailSystem": true,
+    "Newsletter": true,
+    "Pages": true,
+    "Systemsetting": true,
+    "Tax": true,
+    "Ticket": true,
+    "Refund": true
 }

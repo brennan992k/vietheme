@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('public/frontend/') }}/license.css">
 @endpush
 @php 
-  $banner_coller = App\FrontSetting::where('active_status', 1)->first();
+  $banner_coller = App\Models\FrontSetting::where('active_status', 1)->first();
 @endphp 
 @section('content')
 

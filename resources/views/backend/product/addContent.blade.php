@@ -1,6 +1,6 @@
 @extends('backend.master')
 @push('css')
-<link rel="stylesheet" href="{{asset('public/backEnd/')}}/css/upload.css"/>
+<link rel="stylesheet" href="{{asset('public/backend/')}}/css/upload.css"/>
 @endpush
 @section('mainContent')
 

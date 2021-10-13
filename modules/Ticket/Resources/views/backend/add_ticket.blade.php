@@ -176,7 +176,7 @@
 @endsection
 @section('script')
 <link rel="stylesheet" href="{{ url('/') }}/Modules/Blog/Resources/assets/css/tag_input.css">
-<script src="{{ asset('/')}}public/backEnd/js/jquery.min.js"></script>
-<script src="{{ asset('/')}}public/backEnd/backend_modules.js"></script>
+<script src="{{ asset('/')}}public/backend/js/jquery.min.js"></script>
+<script src="{{ asset('/')}}public/backend/backend_modules.js"></script>
 
 @endsection

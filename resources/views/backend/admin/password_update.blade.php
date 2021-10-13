@@ -50,7 +50,7 @@
                             <div class="row mb-25">
 								<div class="cal-lg-4">
 										<div class="img-thumb text-center"> 
-											<img   class="rounded-circle password_update_profile_img" src="{{ file_exists(@$user->profile->image) ? asset(@$user->profile->image) : asset('public/backEnd/img/admin/staff.png') }}" alt="">
+											<img   class="rounded-circle password_update_profile_img" src="{{ file_exists(@$user->profile->image) ? asset(@$user->profile->image) : asset('public/backend/img/admin/staff.png') }}" alt="">
 										</div>
 										<div class="title text-center mt-25">
 											<h3>{{@$user->full_name}}</h3>

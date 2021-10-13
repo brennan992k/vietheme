@@ -496,8 +496,8 @@
             autoplay: true,
             nav: true,
             navText: [
-                "<img src='public/backEnd/img/client/prev.png' />",
-                "<img src='public/backEnd/img/client/next.png' />"
+                "<img src='public/backend/img/client/prev.png' />",
+                "<img src='public/backend/img/client/next.png' />"
             ]
         });
     }

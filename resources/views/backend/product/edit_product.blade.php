@@ -331,12 +331,12 @@
                         </div>
                     </div>
                     @php
-                    $category_details=App\ManageQuery::SelectedCategoryDetails($data['edit']->category_id);
+                    $category_details=App\Models\ManageQuery::SelectedCategoryDetails($data['edit']->category_id);
                     // DB::table('item_categories')->where('id',$data['edit']->category_id)->first();
                     $regular_recommended_price[]=explode("-",$category_details->recommended_price);
                     $extended_recommended_price[]=explode("-",$category_details->recommended_price_extended);
 
-                    $item_fee=App\ManageQuery::FreeItemOfCategory($data['edit']->category_id);
+                    $item_fee=App\Models\ManageQuery::FreeItemOfCategory($data['edit']->category_id);
                     // DB::table('item_fees')->where('category_id',Session::get('categorySlect')->id)->first();
                 
             @endphp 
@@ -455,7 +455,7 @@ function Extended(item) {
     $("#Ex_total").val(total);
 }
 </script>
-<script src="{{asset('public/backEnd/send_email.js')}}"></script>
-<script src="{{asset('public/backEnd/backend.js')}}"></script>
-<script src="{{asset('public/backEnd/js/admin_upload.js')}}"></script>
+<script src="{{asset('public/backend/send_email.js')}}"></script>
+<script src="{{asset('public/backend/backend.js')}}"></script>
+<script src="{{asset('public/backend/js/admin_upload.js')}}"></script>
 @endsection

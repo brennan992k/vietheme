@@ -58,10 +58,10 @@
    </div>
    <!-- /.col (RIGHT) -->
  </div>
-<script src="{{asset('public/backEnd/js/jquery_1_9_1.js')}}"></script>
+<script src="{{asset('public/backend/js/jquery_1_9_1.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
-{{-- <script src="{{asset('public/backEnd/chart/')}}/Chart.min.css"></script>
-<script src="{{asset('public/backEnd/chart/')}}/Chart.min.js"></script> --}}
+{{-- <script src="{{asset('public/backend/chart/')}}/Chart.min.css"></script>
+<script src="{{asset('public/backend/chart/')}}/Chart.min.js"></script> --}}
  
 <script>
     $(function () {

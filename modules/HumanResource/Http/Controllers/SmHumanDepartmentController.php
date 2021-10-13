@@ -7,7 +7,7 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Brian2694\Toastr\Facades\Toastr;
 use Exception;
-use Modules\HumanResourceEntities\InfixDepartment;
+use Modules\HumanResource\Entities\InfixDepartment;
 
 class SmHumanDepartmentController extends Controller
 {

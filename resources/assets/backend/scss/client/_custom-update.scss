@@ -1,0 +1,241 @@
+/*********************************************
+************* custom css {update} ************
+*********************************************/
+
+.update_menu .navbar .navbar-toggler {
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding: 7px 10px;
+}
+
+.update_menu .ti-menu:before {
+    content: "\e6c1";
+    font-size: 20px;
+    color: #fff;
+}
+
+.update_menu .search-bar .input-group {
+    max-width: 305px;
+    float: right;
+}
+
+.update_menu .search-bar input {
+    padding-bottom: 6px;
+    padding-left: 40px;
+}
+
+.update_menu .search-bar input ::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.update_menu .search-bar span {
+    font-size: 20px;
+    background-color: #415094;
+    padding-top: 4px;
+}
+
+@media (max-width: 991px) {
+    .update_menu {
+        height: 80px;
+        position: relative;
+        padding: 10px !important;
+    }
+    .update_menu .light_logo {
+        max-width: 100px;
+    }
+    .update_menu .menu_nav {
+        background-color: #415094;
+    }
+    .update_menu .navbar .nav .nav-item .nav-link {
+        padding: 10px 10px !important;
+    }
+}
+
+.academic-img img {
+    width: 100%;
+}
+
+.client .header-area .navbar .search-bar input:focus {
+    color: #828bb2 !important;
+    font-weight: 300;
+}
+
+@media (max-width: 991px) {
+    .client.light .header-area .navbar .nav .nav-item .nav-link,
+    .client.color .header-area .navbar .nav .nav-item .nav-link {
+        color: #fff !important;
+    }
+    .single-testimonial {
+        padding-bottom: 0 !important;
+    }
+    .client .news-area {
+        margin-bottom: 0;
+    }
+    .client .mapBox {
+        height: 350px;
+    }
+    .client .section-gap-top {
+        padding-top: 40px;
+    }
+    .contact_area {
+        margin-bottom: 40px;
+    }
+    .client .banner-area {
+        margin-top: 85px;
+    }
+    .events-area .date {
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .update_menu .update_menu .menu_nav {
+        margin-left: 10% !important;
+    }
+    .update_menu .navbar-brand img {
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 991px) {
+    .update_menu .menu_nav {
+        margin-left: 25%;
+    }
+    .update_menu .btn-dark:hover {
+        color: #fff;
+        background-color: #23272b;
+        border-color: transparent;
+    }
+}
+
+
+.login-area table td {
+    padding: 0px 7px 0px 7px;
+    width: 25% !important;
+}
+
+@media (max-width: 575px) {
+    .login-area table td {
+        width: 50% !important;
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .login-area table td {
+        width: 50% !important;
+        display: inline-block;
+    }
+}
+
+.login-area table td .get-login-access {
+    padding: 5% 10%;
+    color: #415094;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background-color: #ffffff;
+}
+
+.login-area table td .get-login-access:hover {
+    background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+    color: #ffffff;
+}
+
+/************************************************
+***************** login css *********************/
+
+.login.admin.hight_100 .login-height .input-group-addon {
+    width: 0;
+}
+
+.login.admin.hight_100 .login-height .form-group i {
+    top: 7px;
+    left: 4px;
+}
+
+@media (max-width: 575px) {
+    .login.admin.hight_100 .login-height .input-group-addon {
+        width: 0;
+    }
+    .login.admin.hight_100 .login-height .form-group i {
+        top: 7px;
+        left: 4px;
+    }
+    .login.admin.hight_100 .login-height .form-wrap {
+        padding: 50px 8px;
+    }
+    .login.admin.hight_100 .login-height a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .login.admin.hight_100 .login-height .input-group-addon {
+        width: 0;
+    }
+    .login.admin.hight_100 .login-height .form-group i {
+        top: 7px;
+        left: 4px;
+    }
+}
+
+@media (max-width: 991px) {
+    .login.admin.hight_100 {
+        height: 100% !important;
+        overflow: visible;
+    }
+    .login.admin.hight_100 .login-height .input-group-addon {
+        width: 0;
+    }
+    .login.admin.hight_100 .login-height .form-group i {
+        top: 7px;
+        left: 4px;
+    }
+}
+
+
+.hight_100 {
+    height: 100vh;
+}
+
+@media (max-width: 991px) {
+    .hight_100 {
+        height: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .hight_100 {
+        height: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .hight_100 {
+        height: 100% !important;
+    }
+}
+
+.login-area .login-height {
+    min-height: auto;
+}
+
+.login-height {
+    margin: 50px 0;
+}

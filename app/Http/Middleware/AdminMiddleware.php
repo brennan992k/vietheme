@@ -4,7 +4,6 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Schema;
 
 class AdminMiddleware
 {
@@ -17,9 +16,6 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (!Schema::hasTable('users')) {
-            return redirect('install');
-        }
         if (Auth::user()->role_id == 1) {
             return $next($request);
         }

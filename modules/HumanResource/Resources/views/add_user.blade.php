@@ -1,6 +1,6 @@
 @extends('backend.master')
 @section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('public/backEnd/')}}/css/croppie.css">
+<link rel="stylesheet" type="text/css" href="{{asset('public/backend/')}}/css/croppie.css">
 
 @endsection
 @section('mainContent')
@@ -291,6 +291,6 @@ return $name[array_key_last($name)];
 </div>
 @endsection
 @section('script')
-<script src="{{asset('public/backEnd/')}}/js/croppie.js"></script>
-<script src="{{asset('public/backEnd/')}}/js/editStaff.js"></script>
+<script src="{{asset('public/backend/')}}/js/croppie.js"></script>
+<script src="{{asset('public/backend/')}}/js/editStaff.js"></script>
 @endsection

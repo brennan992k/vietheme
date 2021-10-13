@@ -10,8 +10,8 @@
 
 @push('css')
     <link rel="stylesheet" href="{{ asset('public/css/') }}/auth.css">
-    <style>.login_resister_area .single_resister_sildbar::after { background: url("{{url('/'.@$dashboard_background->image)}}") no-repeat; background-size:cover;  }</style>
 @endpush 
+
 @section('content')
 <!-- login_resister_area-start -->
     <div class="login_resister_area">
@@ -38,10 +38,6 @@
                 </div>
                 <div class="col-xl-8 col-lg-7">
                     <div class="main-login-form">
-
-
-
-                  
                         <div class="resistration-bg">
                             <img src="{{ asset('public/frontend/img/') }}/pattern/Pattern.png" alt="">
                         </div>
@@ -49,69 +45,6 @@
                         <div class="col-xl-6 offset-xl-1">
                             <div class="login_form_content">
                                 <div class="login_form_field">
-
-
-
-                            
-                                {{-- login helper ............. --}}
-
-                                @if(Illuminate\Support\Facades\Config::get('app.app_sync'))
-                                    <div class="supper_buttons">
-
-                                        @php 
-                                            $superadmin = App\ManageQuery::GetDemoUser(1); 
-                                            $agent = App\ManageQuery::GetDemoUser(2); 
-                                            $admin = App\ManageQuery::GetDemoUser(3); 
-                                            $vendor = App\ManageQuery::GetDemoUser(4); 
-                                            $customer = App\ManageQuery::GetDemoUser(5); 
-
-                                        @endphp
-                                        @if(!empty( $superadmin))
-                                            <form action="{{ url('login')}}" method="POST" id="login" >
-                                                @csrf
-                                                 <input type="hidden" name="email" value="{{@$superadmin->email}}">
-                                                 <input type="hidden"  name="password" value="12345678">
-                                                <button type="submit" class="boxed-btn">superadmin</button>
-                                            </form>
-                                            @endif
-                                        @if(!empty( $agent))
-                                            <form action="{{ url('login')}}" method="POST" id="login" >
-                                                @csrf
-                                                 <input type="hidden" name="email" value="{{@$agent->email}}">
-                                                 <input type="hidden"  name="password" value="12345678">
-                                                <button type="submit" class="boxed-btn">Agent</button>
-                                            </form>
-                                            @endif
-                                        @if(!empty( $admin))
-                                            <form action="{{ url('login')}}" method="POST" id="login" >
-                                                @csrf
-                                                 <input type="hidden" name="email" value="{{@$admin->email}}">
-                                                 <input type="hidden"  name="password" value="12345678">
-                                                <button type="submit" class="boxed-btn">admin</button>
-                                            </form>
-                                            @endif
-                                        @if(!empty( $vendor))
-                                            <form action="{{ url('login')}}" method="POST" id="login" >
-                                                @csrf
-                                                 <input type="hidden" name="email" value="{{@$vendor->email}}">
-                                                 <input type="hidden"  name="password" value="12345678">
-                                                <button type="submit" class="boxed-btn">Author</button>
-                                            </form>
-                                            @endif
-                                        @if(!empty( $customer))
-                                            <form action="{{ url('login')}}" method="POST" id="login">
-                                                @csrf
-                                                 <input type="hidden" name="email" value="{{@$customer->email}}">
-                                                 <input type="hidden"  name="password" value="12345678">
-                                                <button type="submit" class="boxed-btn">customer</button>
-                                            </form>
-                                            @endif
-                                        </div>
-                                 @endif
-                                        {{-- login helper ............. --}}
-
-
-
                                     <form action="{{ url('login')}}" method="POST" id="cust_login">
                                         @csrf
                                         <div class="col-xl-12">
@@ -163,7 +96,7 @@
                                             </div>
                                         </div>
                                             @php
-                                                   $reCaptcha =  App\ManageQuery::ReCaptchaSetting();
+                                                   $reCaptcha =  App\Models\ManageQuery::ReCaptchaSetting();
                                             @endphp
                                          <input type="text" hidden id="recaptcha_check" value="{{ @$reCaptcha->status }}">
                                         @if (@$reCaptcha->status == 1) 

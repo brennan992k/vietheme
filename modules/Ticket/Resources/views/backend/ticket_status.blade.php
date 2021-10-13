@@ -39,7 +39,7 @@
           </div>
       </div>
     @php
-    $getData=App\ManageQuery::InfixTicket();
+    $getData=App\Models\ManageQuery::InfixTicket();
         $progress=$getData['progress'];
         $pending=$getData['pending'];
         $close=$getData['close'];

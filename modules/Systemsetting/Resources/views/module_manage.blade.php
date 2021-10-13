@@ -2,7 +2,7 @@
 @extends('backend.master')
 
 @section('mainContent')
-<script src="{{asset('/')}}public/backEnd/vendors/js/jquery-3.2.1.min.js"></script>
+<script src="{{asset('/')}}public/backend/vendors/js/jquery-3.2.1.min.js"></script>
     <style type="text/css">
         #selectStaffsDiv, .forStudentWrapper {
             display: none;
@@ -189,7 +189,7 @@
                                                     
                                                 @endphp
                                                     @if('AmazonS3' == $row->getName())
-                                                        <div id="waiting_loader" class="waiting_loader{{@$row->getName()}}"><img src="{{asset('public/backEnd/img/demo_wait.gif')}}" width="44" height="44" /><br>Installing..</div>
+                                                        <div id="waiting_loader" class="waiting_loader{{@$row->getName()}}"><img src="{{asset('public/backend/img/demo_wait.gif')}}" width="44" height="44" /><br>Installing..</div>
                                                         <label class="switch module_switch_label{{@$row->getName()}}">
 
                                                             <input type="checkbox" data-id="{{@$row->getName()}}" id="ch{{@$row->getName()}}" class="switch-input1 module_switch" {{moduleStatusCheck($row->getName() ) == false? '':'checked'}}>

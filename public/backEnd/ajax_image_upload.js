@@ -2,7 +2,7 @@
  
 
 /* 
-    <script src="{{ asset('/')}}public/backEnd/ajax_image_upload.js"></script>
+    <script src="{{ asset('/')}}public/backend/ajax_image_upload.js"></script>
 */
  function upload(img) {
         var form_data = new FormData();

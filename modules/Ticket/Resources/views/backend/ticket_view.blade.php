@@ -160,7 +160,7 @@ function showPicName($data){
                                                                 @php 
                                                                     $path = $item->user->profile->image;
                                                                     if(empty($path)){
-                                                                    $path = 'public/backEnd/img/admin/staff.png';
+                                                                    $path = 'public/backend/img/admin/staff.png';
                                                                     }
                                                                 @endphp
                                                                     <div class="single_comment mb-3">
@@ -247,5 +247,5 @@ function showPicName($data){
 
 @endsection
 @section('script')
-<script src="{{asset('public/backEnd/')}}/js/digital.js"></script>
+<script src="{{asset('public/backend/')}}/js/digital.js"></script>
 @endsection

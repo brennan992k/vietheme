@@ -81,7 +81,7 @@
     @stack('css')   
     <link rel="stylesheet" href="{{ asset('public/frontend/css/') }}/responsive.css">
     @php 
-    $banner_coller = App\FrontSetting::where('active_status', 1)->first();
+    $banner_coller = App\Models\FrontSetting::where('active_status', 1)->first();
 
     @endphp 
 <link rel="stylesheet" href="{{ asset('public/frontend/') }}/master.css">

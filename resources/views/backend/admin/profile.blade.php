@@ -49,7 +49,7 @@ if(!empty(@$setting->currency_symbol)){ @$currency = @$setting->currency_symbol;
                 @if(!empty(@$data->profile->image))
                 <img class="student-meta-img img-100" src="{{asset(@$data->profile->image)}}"  alt="">
                 @else
-                <img class="student-meta-img img-100" src="{{asset('public/backEnd/img/admin/staff.png')}}"  alt="">
+                <img class="student-meta-img img-100" src="{{asset('public/backend/img/admin/staff.png')}}"  alt="">
                 @endif
                 <div class="white-box">
                     <div class="single-meta mt-10">

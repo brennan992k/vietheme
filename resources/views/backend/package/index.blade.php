@@ -1,6 +1,6 @@
 @extends('backend.master')
 @section('mainContent')
-<link rel="stylesheet" href="{{ asset('public/backEnd/css/') }}/package.css">
+<link rel="stylesheet" href="{{ asset('public/backend/css/') }}/package.css">
 <script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
@@ -279,7 +279,7 @@
 
 @section('script')
       
-<script src="{{asset('public/backEnd/backend.js')}}"></script>
+<script src="{{asset('public/backend/backend.js')}}"></script>
 @endsection
 
 @endsection

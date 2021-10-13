@@ -65,9 +65,9 @@
                                                         {{-- @dd($data['sub_cat']->id) --}}
                                                             @php
                                                                 if (@$data['sub_cat']) {
-                                                                   $number = @App\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,$val); 
+                                                                   $number = @App\Models\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,$val); 
                                                                 }else {
-                                                                    $number = App\ManageQuery::ItemWithCategoryTag($data['category']->id,$val);  
+                                                                    $number = App\Models\ManageQuery::ItemWithCategoryTag($data['category']->id,$val);  
                                                                 }
                                                             @endphp 
                                                                                                                 
@@ -105,7 +105,7 @@
                                                     <ul>
                                                             @php
                                                               if (@$data['sub_cat']) {
-                                                                    $getData=App\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,null);
+                                                                    $getData=App\Models\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,null);
                                                                     $no = @$getData['no'];
                                                                     $low = @$getData['low'];
                                                                     $medium = @$getData['medium'];
@@ -113,7 +113,7 @@
                                                                     $top =@$getData['top'];
                                                             }
                                                             else {
-                                                                $getData=App\ManageQuery::ItemSaleCountWithCat($data['category']->id);
+                                                                $getData=App\Models\ManageQuery::ItemSaleCountWithCat($data['category']->id);
                                                                     $no = @$getData['no'];
                                                                     $low = @$getData['low'];
                                                                     $medium = @$getData['medium'];
@@ -140,7 +140,7 @@
                                                     <ul>
                                                             @php
                                                             if (@$data['sub_cat']) {
-                                                               $getData=App\ManageQuery::ItemStarCountWithSubCat($data['sub_cat']->id);
+                                                               $getData=App\Models\ManageQuery::ItemStarCountWithSubCat($data['sub_cat']->id);
                                                                     $oneStar = $getData['oneStar'];
                                                                     $TwoStar = $getData['TwoStar'];
                                                                     $ThreStar = $getData['ThreStar'];
@@ -148,7 +148,7 @@
                                                                     $FivStar =$getData['FivStar'];
                                                             }
                                                             else {
-                                                                $getData=App\ManageQuery::ItemStarCountWithCat($data['category']->id);
+                                                                $getData=App\Models\ManageQuery::ItemStarCountWithCat($data['category']->id);
                                                                     $oneStar = $getData['oneStar'];
                                                                     $TwoStar = $getData['TwoStar'];
                                                                     $ThreStar = $getData['ThreStar'];
@@ -174,7 +174,7 @@
                                                         @php 
                                                         if (@$data['sub_cat']) {
 
-                                                             $getData=App\ManageQuery::ItemDateWiseWithSubCat($data['category']->id,$data['sub_cat']->id);
+                                                             $getData=App\Models\ManageQuery::ItemDateWiseWithSubCat($data['category']->id,$data['sub_cat']->id);
                                                                     $Any_Date = $getData['Any_Date'];
                                                                     $LastYear = $getData['LastYear'];
                                                                     $Last_month = $getData['Last_month'];
@@ -189,7 +189,7 @@
                                                             // $Last_day=DB::table('items')->where('category_id',@$data['category']->id)->where('sub_category_id',@$data['sub_cat']->id)->where('active_status', 1)->where('status', 1)->whereBetween('created_at',[date('Y-m-d',strtotime('-1 days')),date('Y-m-d')])->count();
                                                         }else {
 
-                                                             $getData=App\ManageQuery::ItemDateWiseWithCat($data['category']->id);
+                                                             $getData=App\Models\ManageQuery::ItemDateWiseWithCat($data['category']->id);
                                                                     $Any_Date = $getData['Any_Date'];
                                                                     $LastYear = $getData['LastYear'];
                                                                     $Last_month = $getData['Last_month'];
@@ -224,10 +224,10 @@
                                                         @foreach ($data['item']->unique('software_version') as $item)
                                                         @php
                                                         if (@$data['sub_cat']) {
-                                                           $software_version =App\ManageQuery::ItemSubCatWithSoftwareVersion($data['sub_cat']->id,$item->software_version);
+                                                           $software_version =App\Models\ManageQuery::ItemSubCatWithSoftwareVersion($data['sub_cat']->id,$item->software_version);
                                                             // DB::table('items')->where('sub_category_id',@$data['sub_cat']->id)->where('software_version',@$item->software_version)->get()->count(); 
                                                           }else {
-                                                              $software_version =App\ManageQuery::ItemCatWithSoftwareVersion($data['category']->id,$item->software_version);
+                                                              $software_version =App\Models\ManageQuery::ItemCatWithSoftwareVersion($data['category']->id,$item->software_version);
                                                             //    DB::table('items')->where('category_id',@$data['category']->id)->where('software_version',@$item->software_version)->get()->count(); 
                                                           }
                                                         @endphp
@@ -249,10 +249,10 @@
                                                         @foreach ($data['item']->unique('compatible_with') as $item)
                                                         @php
                                                         if (@$data['sub_cat']) {
-                                                           $compatible_with = App\ManageQuery::ItemSubCatWithCompatibleWith($data['sub_cat']->id,$item->compatible_with);
+                                                           $compatible_with = App\Models\ManageQuery::ItemSubCatWithCompatibleWith($data['sub_cat']->id,$item->compatible_with);
                                                         //    DB::table('items')->where('sub_category_id',@$data['sub_cat']->id)->where('compatible_with',@$item->compatible_with)->get()->count(); 
                                                           }else {
-                                                              $compatible_with =App\ManageQuery::ItemCatWithCompatibleWith($data['category']->id,$item->compatible_with);
+                                                              $compatible_with =App\Models\ManageQuery::ItemCatWithCompatibleWith($data['category']->id,$item->compatible_with);
                                                             //    DB::table('items')->where('category_id',@$data['category']->id)->where('compatible_with',@$item->compatible_with)->get()->count(); 
                                                           }
                                                         @endphp

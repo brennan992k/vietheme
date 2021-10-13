@@ -1,7 +1,7 @@
 @extends('frontend.master')
 @push('css')
 <link rel="stylesheet" href="{{ asset('public/frontend/css/') }}/dashboard.css">
-<link rel="stylesheet" type="text/css" href="{{ asset('/') }}public/backEnd/css/croppie.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('/') }}public/backend/css/croppie.css">
 <link rel="stylesheet" href="{{ asset('public/frontend/') }}/vendor_view.css">
 @endpush
 @section('content')
@@ -41,7 +41,7 @@
                                     </div>
                                 </div>
                                 @php
-                                    $item =App\ManageQuery::CountItemSell($data['user']->id); 
+                                    $item =App\Models\ManageQuery::CountItemSell($data['user']->id); 
                                 @endphp
                                 <div class="rating d-flex">
                                     <div class="rating-star">
@@ -245,10 +245,10 @@
                                                     <div class="col-xl-4 col-md-6">
 
                                                             @php
-                                                            $level=App\ManageQuery::UserLabel($data['user']->balance->amount); 
+                                                            $level=App\Models\ManageQuery::UserLabel($data['user']->balance->amount); 
                                                             // DB::table('labels')->where('amount','<=',@$data['user']->balance->amount)->orderBy('id','desc')->first();
                                                             $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$data['user']->created_at);
-                                                            $badge=App\ManageQuery::UserBadge($date); 
+                                                            $badge=App\Models\ManageQuery::UserBadge($date); 
                                                         @endphp
                                                         <div class="badge_mark">
                                                                 <div class="first_badge gray-bg">
@@ -410,10 +410,10 @@
                                                             </div>
                                                         </div>
                                                         @php
-                                                             $level=App\ManageQuery::UserLabel($item->balance->amount); 
+                                                             $level=App\Models\ManageQuery::UserLabel($item->balance->amount); 
                                                             // DB::table('labels')->where('amount','<=',@$item->balance->amount)->orderBy('id','desc')->first();
                                                             $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$item->created_at);
-                                                            $badge=App\ManageQuery::UserBadge($date); 
+                                                            $badge=App\Models\ManageQuery::UserBadge($date); 
                                                         @endphp
                                                         <div class="bandge">
                                                                 <img src="{{asset(@$level->icon)}}" data-toggle="tooltip" data-placement="bottom" title="Author level  {{ @$level->id}} : sold {{@GeneralSetting()->currency_symbol}} {{round(@$item->balance->amount > 50 ? @$item->balance->amount: 0) }}+ on {{@GeneralSetting()->system_name}} " alt="">
@@ -545,10 +545,10 @@
                                                                 </div>
 
                                                                 @php
-                                                                 $level=App\ManageQuery::UserLabel($item->balance->amount); 
+                                                                 $level=App\Models\ManageQuery::UserLabel($item->balance->amount); 
                                                                 // DB::table('labels')->where('amount','<=',@$item->balance->amount)->orderBy('id','desc')->first();
                                                                 $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$item->created_at);
-                                                                $badge=App\ManageQuery::UserBadge($date); 
+                                                                $badge=App\Models\ManageQuery::UserBadge($date); 
                                                                     // $level=DB::table('labels')->where('amount','<=',@$item->balance->amount)->orderBy('id','desc')->first();
                                                                     // $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays($item->created_at);
                                                                     // $badge=DB::table('badges')->where('day','<=',@$date)->orderBy('id','desc')->first();
@@ -683,7 +683,7 @@
 @endsection
 @push('js')
 <!-- Croppie js -->
-<script src="{{ asset('/public/backEnd/js/')}}/croppie.js"></script>
+<script src="{{ asset('/public/backend/js/')}}/croppie.js"></script>
 
 <script src="{{asset('public/frontend/js/vendorView.js')}}"></script>
 <script src="{{ asset('public/frontend/js/') }}/delete.js"></script>

@@ -7,12 +7,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title') - Infix</title>
+    <title>@yield('title') - VieTheme</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/{{isset($fav)?$fav->image:''}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/{{isset($fav)? $fav->image: ''}}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -25,24 +25,22 @@
     <link rel="stylesheet" href="{{ asset('public/frontend/css/') }}/animate.css">
     <link rel="stylesheet" href="{{ asset('public/frontend/css/') }}/slicknav.css">
     <link rel="stylesheet" href="{{ asset('public/frontend/css/') }}/style.css">
-    <link rel="stylesheet" href="{{asset('public/css/toastr.css')}}">
-    <link rel="stylesheet" href="{{asset('public/css/common_style.css')}}">
-
+    <link rel="stylesheet" href="{{ asset('public/css/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/common_style.css') }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     @stack('css')
+    
 </head>
 
 <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-<!-- login_resister_area-start -->
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- login_resister_area-start -->
     @yield('content')
-<!-- login_resister_area-end -->
-
+    <!-- login_resister_area-end -->
 
     <!-- JS here -->
-    
     <script src="{{ asset('public/frontend/js/') }}/vendor/modernizr-3.5.0.min.js"></script>
     <script src="{{ asset('public/frontend/js/') }}/vendor/jquery-1.12.4.min.js"></script>
     <script src="{{ asset('public/frontend/js/') }}/popper.min.js"></script>
@@ -71,10 +69,9 @@
     <script src="{{ asset('public/frontend/js/') }}/login.js"></script>    
     <script src="{{ asset('js/')}}/validate.js"></script>
     <script src="{{ asset('js/')}}/additional.js"></script>
-    <script src="{{asset('public/js/toastr.js')}}"></script>
+    <script src="{{ asset('public/js/toastr.js') }}"></script>
     {!! Toastr::message() !!}
     @stack('js')
-     
 
 </body>
 

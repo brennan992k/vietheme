@@ -4,12 +4,12 @@ $setting = Modules\Systemsetting\Entities\InfixGeneralSetting::find(1);
 if(isset($setting->copyright_text)){ $copyright_text = $setting->copyright_text; }else{ $copyright_text = 'Copyright © 2019 All rights reserved | This template is made with by Codethemes'; }
 if(isset($setting->logo)) { $logo = $setting->logo; } else{ $logo = 'public/uploads/settings/logo.png'; }
 
-if(isset($setting->favicon)) { $favicon = $setting->favicon; } else{ $favicon = 'public/backEnd/img/favicon.png'; }
+if(isset($setting->favicon)) { $favicon = $setting->favicon; } else{ $favicon = 'public/backend/img/favicon.png'; }
  
-@$login_background = App\SmBackgroundSetting::where([['is_default',1],['title','Login Background']])->first(); 
+@$login_background = App\Models\SmBackgroundSetting::where([['is_default',1],['title','Login Background']])->first(); 
  
 if(empty(@$login_background)){
-    $css = "background: url(".url('public/backEnd/img/login-bg.jpg').")  no-repeat center; background-size: cover; ";
+    $css = "background: url(".url('public/backend/img/login-bg.jpg').")  no-repeat center; background-size: cover; ";
 }else{
     if(!empty(@$login_background->image)){
         @$css = "background: url('". url(@$login_background->image) ."')  no-repeat center;  background-size: cover;";
@@ -28,9 +28,9 @@ if(empty(@$login_background)){
     <link rel="icon" href="{{asset($favicon)}}" type="image/png"/>
     <title>Login</title>
     <meta name="_token" content="{!! csrf_token() !!}"/>
-    <link rel="stylesheet" href="{{asset('public/backEnd/')}}/vendors/css/bootstrap.css" />
-    <link rel="stylesheet" href="{{asset('public/backEnd/')}}/vendors/css/themify-icons.css" />
-    <link rel="stylesheet" href="{{asset('public/backEnd/')}}/css/style.css" />
+    <link rel="stylesheet" href="{{asset('public/backend/')}}/vendors/css/bootstrap.css" />
+    <link rel="stylesheet" href="{{asset('public/backend/')}}/vendors/css/themify-icons.css" />
+    <link rel="stylesheet" href="{{asset('public/backend/')}}/css/style.css" />
 </head>
 <body class="login admin hight_100" style="{{$css}}">
 
@@ -126,10 +126,10 @@ if(empty(@$login_background)){
 
 
 
-    <script src="{{asset('public/backEnd/')}}/vendors/js/jquery-3.2.1.min.js"></script>
-    <script src="{{asset('public/backEnd/')}}/vendors/js/popper.js"></script>
-	<script src="{{asset('public/backEnd/')}}/vendors/js/bootstrap.min.js"></script>
-	<script src="{{asset('public/backEnd/')}}/js/login.js"></script>
+    <script src="{{asset('public/backend/')}}/vendors/js/jquery-3.2.1.min.js"></script>
+    <script src="{{asset('public/backend/')}}/vendors/js/popper.js"></script>
+	<script src="{{asset('public/backend/')}}/vendors/js/bootstrap.min.js"></script>
+	<script src="{{asset('public/backend/')}}/js/login.js"></script>
 
 
 </body>

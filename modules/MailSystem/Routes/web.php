@@ -11,7 +11,7 @@
 |
 */
 
-use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'mailsystem'], function () {
     Route::get('/mail-template', 'MailSystemController@create')->name('admin.mail_template');

@@ -1,19 +1,11 @@
 <?php
 
-use App\Mail\TestMail;
-use Spatie\Analytics\Period;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-/* 
-Route::get('p',function(){
-   phpinfo();
-}); */
-
-
 
 Route::group(['middleware' => ['XSS']], function () {
 
-  
+
    Route::get('/', 'Frontend\HomeController@index');
    Route::get('logout', 'Frontend\HomeController@logout');
    Route::get('/package-plan', 'Frontend\HomeController@packagePlan')->name('packagePlan');
@@ -69,10 +61,10 @@ Route::group(['middleware' => ['XSS']], function () {
 
       // start free download   
       Route::get('free-item/download/file_lic/{id}', 'Customer\ProductDownloadController@FreeProductLicence')->name('FreeItemDownloadAll');
-   /*    Route::get('free-item/download/file/{id}', 'Customer\ProductDownloadController@FreeProductDownload')->name('FreeProductDownload');
+      /*    Route::get('free-item/download/file/{id}', 'Customer\ProductDownloadController@FreeProductDownload')->name('FreeProductDownload');
       Route::get('free-item/download/licence/{id}', 'Customer\ProductDownloadController@FreeLicenceDownload')->name('FreeLicenceDownload'); */
       // end free download
-      
+
       //=====================END PRODUCT DOWNLOAD ========================
 
       // start become an aurhor 
@@ -139,7 +131,7 @@ Route::group(['middleware' => ['XSS']], function () {
    Route::get('/home', 'HomeController@index')->name('home');
    Route::get('/license-details', 'Frontend\HomeController@license_details')->name('license_details');
 
-Route::group(['prefix' => 'paypal'],function(){
+   Route::group(['prefix' => 'paypal'], function () {
 
       Route::get('payment', 'Frontend\PayPalPaymentController@index');
       Route::post('charge', 'Frontend\PayPalPaymentController@charge')->name('paypal_payment');
@@ -149,7 +141,7 @@ Route::group(['prefix' => 'paypal'],function(){
       Route::post('deposit', 'Frontend\PayPalDepositController@deposit')->name('paypal_deposit');
       Route::get('depositsuccess', 'Frontend\PayPalDepositController@payment_success');
       Route::get('depositerror', 'Frontend\PayPalDepositController@payment_error');
-});
+   });
 
    // item 
 
@@ -205,8 +197,7 @@ Route::group(['prefix' => 'paypal'],function(){
       Route::get('user-update-item-email/{id}', 'Customer\ProductDownloadController@ItemUpdateNotify');
 
 
-      Route::POST('bank_payment','Customer\CustomerController@bank_payment')->name('bank_payment');
-
+      Route::POST('bank_payment', 'Customer\CustomerController@bank_payment')->name('bank_payment');
    });
 
    Route::group(['middleware' => ['auth', 'verified', 'CheckDashboardMiddleware'], 'namespace' => 'Frontend', 'prefix' => 'customer', 'as' => 'customer.'], function () {
@@ -226,19 +217,17 @@ Route::group(['prefix' => 'paypal'],function(){
       Route::post('email-settings-store', 'EmailNotificationSettingsController@store')->name('userEmailNotificationStore');
       Route::post('email-settings-update', 'EmailNotificationSettingsController@update')->name('userEmailNotificationUpdate');
       /* ******************** END EMAIL SETTINGS ROUTES ********************* */
-   
    });
 
 
 
 
    // Start Market APIs
-   
-         Route::group(['namespace' => 'Frontend'], function () {
-         Route::get('market-apis', 'HomeController@market_apis')->name('marketApis');
-      
+
+   Route::group(['namespace' => 'Frontend'], function () {
+      Route::get('market-apis', 'HomeController@market_apis')->name('marketApis');
    });
 
-   Route::get('mail-send','Frontend\EmailNotificationSettingsController@Emailsent');
+   Route::get('mail-send', 'Frontend\EmailNotificationSettingsController@Emailsent');
    // End Market APIs
 });

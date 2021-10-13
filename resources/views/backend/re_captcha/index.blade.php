@@ -1,6 +1,6 @@
 @extends('backend.master')
 @section('mainContent')
-<link rel="stylesheet" href="{{asset('public/backEnd/')}}/approved_deposit.css">
+<link rel="stylesheet" href="{{asset('public/backend/')}}/approved_deposit.css">
 @php
     function showPicName($data){
         $name = explode('/', $data);

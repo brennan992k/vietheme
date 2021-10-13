@@ -139,7 +139,7 @@
                                                        
                                                         @php
                                                         
-                                                            $item=App\ManageQuery::UserFirstItem();
+                                                            $item=App\Models\ManageQuery::UserFirstItem();
                                                             // DB::table('items')->where('user_id',Auth::user()->id)->first();
                                                         @endphp
                                                         @if ($item)
@@ -194,7 +194,7 @@
                                                         <div class="upload_inner">
                                                             <h3>@lang('lang.uplaod') @lang('lang.item')</h3>
                                                             @php
-                                                                $categoryItem=App\ManageQuery::CategoryUpPermission();
+                                                                $categoryItem=App\Models\ManageQuery::CategoryUpPermission();
                                                                 // DB::table('item_categories')->where('up_permission', 1)->orderBy('id','desc')->get();
                                                             @endphp
                                                                 <select class="wide" id="select_category" name="category">
@@ -228,10 +228,10 @@
                                                 <div class="col-xl-4 col-md-6">
                                                     <div class="badge_mark">
                                                             @php
-                                                                $level=App\ManageQuery::UserLabel($data['user']->balance->amount); 
+                                                                $level=App\Models\ManageQuery::UserLabel($data['user']->balance->amount); 
                                                                 // DB::table('labels')->where('amount','<=',@$data['user']->balance->amount)->orderBy('id','desc')->first();
                                                                 $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$data['user']->created_at);
-                                                                $badge=App\ManageQuery::UserBadge($date); 
+                                                                $badge=App\Models\ManageQuery::UserBadge($date); 
                                                             @endphp
                                                         <div class="first_badge gray-bg">
                                                             <img height="auto" width="40" src="{{asset(@$level->icon)}}" data-toggle="tooltip" data-placement="bottom" title="Author level  {{ @$level->id}} : sold {{@GeneralSetting()->currency_symbol}} {{@round($data['user']->balance->amount > 50 ? $data['user']->balance->amount: 0) }}+ on {{GeneralSetting()->system_name}} " alt="">
@@ -372,10 +372,10 @@
                                                         // $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays($item->created_at);
                                                         // $badge=DB::table('badges')->where('day','<=',@$date)->orderBy('id','desc')->first();
 
-                                                           $level=App\ManageQuery::UserLabel($item->balance->amount); 
+                                                           $level=App\Models\ManageQuery::UserLabel($item->balance->amount); 
                                                             // DB::table('labels')->where('amount','<=',@$item->balance->amount)->orderBy('id','desc')->first();
                                                             $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$item->created_at);
-                                                            $badge=App\ManageQuery::UserBadge($date); 
+                                                            $badge=App\Models\ManageQuery::UserBadge($date); 
                                                     @endphp
                                                 <div class="bandge">
                                                     <img height="auto" width="40" src="{{asset(@$level->icon)}}" data-toggle="tooltip" data-placement="bottom" title="Author level  {{ @$level->id}} : sold {{@GeneralSetting()->currency_symbol}} {{round(@$item->balance->amount > 50 ? @$item->balance->amount: 0) }}+ on {{@GeneralSetting()->system_name}} " alt="">
@@ -504,10 +504,10 @@
                                                             // $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays($item->created_at);
                                                             // $badge=DB::table('badges')->where('day','<=',$date)->orderBy('id','desc')->first();
 
-                                                             $level=App\ManageQuery::UserLabel($item->balance->amount); 
+                                                             $level=App\Models\ManageQuery::UserLabel($item->balance->amount); 
                                                             // DB::table('labels')->where('amount','<=',@$item->balance->amount)->orderBy('id','desc')->first();
                                                             $date=Carbon\Carbon::parse(Carbon\Carbon::now())->diffInDays(@$item->created_at);
-                                                            $badge=App\ManageQuery::UserBadge($date); 
+                                                            $badge=App\Models\ManageQuery::UserBadge($date); 
                                                         @endphp
                                                         <div class="bandge">
                                                             <img src="{{asset(@$level->icon)}}" data-toggle="tooltip" data-placement="bottom" title="Author level  {{ @$level->id}} : sold {{@GeneralSetting()->currency_symbol}} {{round(@$item->balance->amount > 50 ? @$item->balance->amount: 0) }}+ on {{@GeneralSetting()->system_name}} " alt="">
@@ -976,7 +976,7 @@
                                                         <div class="tab-pane fade {{ str_contains(Request::fullUrl(),'email_setting')?'show active':'' }}" id="v-pills-messages"
                                                             role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                                                 @php
-                                                            $email_setting=App\ManageQuery::UserEmailNotificationSettings();
+                                                            $email_setting=App\Models\ManageQuery::UserEmailNotificationSettings();
                                                             // DB::table('email_notification_settings')->where('user_id',Auth::user()->id)->first();
                                                             @endphp
                                                             @if (!empty($email_setting))
@@ -1424,7 +1424,7 @@
                                                             role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                                             <div class="social_networks gray-bg">
                                                                 @php
-                                                                    $user=App\ManageQuery::UserDetails();
+                                                                    $user=App\Models\ManageQuery::UserDetails();
                                                                     @$api_token=@$user->api_token;
                                                                 @endphp
                                                                 <h4>@lang('lang.genarate_API_key')</h4>
@@ -2607,7 +2607,7 @@
                                                                 </thead>
                                                                 <tbody id="statement">
                                                                     @php
-                                                                        $statement =App\ManageQuery::UserPaymentStatement();
+                                                                        $statement =App\Models\ManageQuery::UserPaymentStatement();
                                                                     @endphp
                                                                     @foreach ($statement as $val)                                                                          
                                                                         <tr>
@@ -2633,7 +2633,7 @@
                                                         <p class="timing">@lang('lang.ysreotl30d')</p>
                                                         @php
                                                             // $statement = DB::table('statements')->where('author_id',Auth::user()->id)->whereDate('created_at','>', \Carbon\Carbon::now()->subDays(30))->get();
-                                                            $statement = App\ManageQuery::UserPaymentStatement();
+                                                            $statement = App\Models\ManageQuery::UserPaymentStatement();
                                                             $fees=0;
                                                             foreach ($statement as $key => $value) {
                                                                 if ($value->type == 'e') {                                                                     
@@ -2722,7 +2722,7 @@
             <div class="col-xl-12">
                     <div class="select_box">
                         @php
-                             $review_type = App\ManageQuery::ReviewType();
+                             $review_type = App\Models\ManageQuery::ReviewType();
 
                         @endphp
                         <p>@lang('lang.mryr')</p>

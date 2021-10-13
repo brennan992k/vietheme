@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Brian2694\Toastr\Facades\Toastr;
+use Exception;
+use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Auth;
 use Modules\Blog\Entities\InfixBlog;
 use Modules\Blog\Entities\InfixBlogCategory;
@@ -111,7 +113,7 @@ class BlogController extends Controller
                 Toastr::error('Operation Failed', 'Failed');
                 return redirect()->back();
             }
-        } catch (\Illuminate\Database\QueryException $e) {
+        } catch (QueryException $e) {
             Toastr::error('This category used in blog', 'Failed');
             return redirect()->back();
         } catch (Exception $e) {

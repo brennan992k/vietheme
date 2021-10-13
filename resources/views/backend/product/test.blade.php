@@ -490,8 +490,8 @@
             </div>
     </div>
 </section>
-{{-- <script src="{{asset('public/backEnd/vendors/js/select2/select2.min.js')}}"></script> --}}
-{{-- <script src="{{asset('public/backEnd/send_email.js')}}"></script> --}}
+{{-- <script src="{{asset('public/backend/vendors/js/select2/select2.min.js')}}"></script> --}}
+{{-- <script src="{{asset('public/backend/send_email.js')}}"></script> --}}
 
 <script>
 $("#selectStaffss").select2();

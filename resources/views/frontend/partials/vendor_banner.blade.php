@@ -24,7 +24,7 @@
                             </div>
                              @if (@Auth::user()->role_id == 4)
                             @php
-                                $item = App\ManageQuery::CountItemSell($data['user']->id);
+                                $item = App\Models\ManageQuery::CountItemSell($data['user']->id);
                             @endphp
                                 <div class="rating d-flex">
                                     <div class="rating-star">

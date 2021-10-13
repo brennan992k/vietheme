@@ -3,7 +3,7 @@
   <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-    <link rel="stylesheet" href="{{asset('public/backEnd/')}}/vendors/css/bootstrap.css"/>
+    <link rel="stylesheet" href="{{asset('public/backend/')}}/vendors/css/bootstrap.css"/>
     <link rel="stylesheet" href="{{ asset('public/frontend/') }}/error.css">
     <title>Sorry ! Page not found</title>
  
@@ -39,9 +39,9 @@
         </div>
     </div>
     
-    <script src="{{asset('public/backEnd/error')}}/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="{{asset('public/backEnd/error')}}/js/popper.min.js"></script>
-    <script src="{{asset('public/backEnd/error')}}/js/bootstrap.min.js"></script>
+    <script src="{{asset('public/backend/error')}}/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="{{asset('public/backend/error')}}/js/popper.min.js"></script>
+    <script src="{{asset('public/backend/error')}}/js/bootstrap.min.js"></script>
   
 </body>
 </html>

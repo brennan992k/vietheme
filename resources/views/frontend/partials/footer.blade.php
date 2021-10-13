@@ -19,7 +19,7 @@
                                     </div>
                                     <div class="community-area">
                                             @php
-                                            $getData=App\ManageQuery::FooterSellCount();
+                                            $getData=App\Models\ManageQuery::FooterSellCount();
                                                 @$ItemEarning=$getData['ItemEarning'];
                                             @endphp
                                         <div class="total-community">

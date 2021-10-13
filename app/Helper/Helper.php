@@ -72,7 +72,6 @@ if (!function_exists('appMode')) {
 }
 function GeneralSetting()
 {
-  // $data = DB::table('infix_general_settings')->first();
   return app('infix_general_settings');
 }
 if (!function_exists('systemStyle')) {
@@ -505,13 +504,12 @@ if (!function_exists('re_captcha_settings')) {
 if (!function_exists('dashboard_background')) {
   function dashboard_background($conditions = null)
   {
-    $empty = [];
     if (!empty($conditions)) {
-      return $data = InfixBackgroundSetting::where($conditions)->first();
+      return InfixBackgroundSetting::where($conditions)->first();
     } else {
-      return $data = InfixBackgroundSetting::first();
+      return InfixBackgroundSetting::first();
     }
-    return $empty;
+    return [];
   }
 }
 if (!function_exists('moduleStatusCheck')) {

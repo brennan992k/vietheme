@@ -1,0 +1,359 @@
+.payment_confirm_header {
+    height: 120px;
+    width: 120px;
+    background: #16e481;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.payment_confirm_header .payment_logo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+}
+
+.payment_comfirmation_header .conformation-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    margin-top: 15px !important;
+    color: #fff;
+}
+
+.payment_comfirmation_header .conformation-title p {
+    font-size: 14px;
+    color: #fff !important;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.payment_comfirmation_header .conformation-title p a {
+    font-size: 14px;
+    color: #fff !important;
+    line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.payment_confim_area.section-padding {
+    padding-top: 60px;
+}
+
+/* summernote */
+
+.note-editor.note-frame {
+    border: 1px solid #eee1e2;
+}
+
+.note-editor.note-frame .note-popover .note-popover-content,
+.note-editor.note-frame .note-toolbar {
+    padding: 4px 15px 8px 15px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #fafafa;
+}
+
+.note-editor.note-frame .note-btn i,
+.note-editor.note-frame .note-current-fontname {
+    color: #888888;
+    font-size: 12px;
+}
+
+.note-editor.note-frame .note-btn {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #888888;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.note-editor.note-frame .note-btn:hover {
+    color: #fff;
+    background: #7c32ff;
+}
+
+.note-editor.note-frame .note-btn:hover i {
+    color: #fff;
+    background: #7c32ff;
+}
+
+.note-editor.note-frame .note-btn .note-current-fontname:hover {
+    color: #fff;
+}
+
+.note-editor.note-frame .show .dropdown-toggle::after {
+    transform: rotate(180deg);
+    color: red;
+}
+
+.note-editor.note-frame .note-icon-font.note-recent-color {
+    background: transparent !important;
+    color: #888888 !important;
+}
+
+.note-editor.note-frame .show .dropdown-toggle::after {
+    color: #888888 !important;
+}
+
+.note-editor.note-frame .note-btn:hover span {
+    color: #fff !important;
+}
+
+.note-editor.note-frame .note-btn:hover i {
+    color: #fff !important;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    background-color: #fff;
+}
+
+.note-editor.note-frame .note-placeholder {
+    padding: 18px 25px 0 25px;
+    font-size: 14px;
+    color: #888888;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.banner-area4 {
+    height: 420px !important;
+}
+
+.padding_25px {
+    padding: 25px;
+}
+
+.latest-goods-area .portfolio-menu button {
+    transition: 0.3s;
+}
+
+.upload_area .upload_description {
+    overflow: visible;
+}
+
+.header-area.sticky .profile-area a:hover {
+    color: #333 !important;
+}
+
+.main-details-area .overview .over_view_info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.5;
+}
+
+.main-details-area .overview .over_view_info ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.5;
+}
+
+.single-info-inner .single-info-title p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #454545;
+}
+
+.single-info-inner .single-info-content p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 300;
+}
+
+.theme-side-bar1 .progressBar-area .single-progress-bar {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-gap: 5px;
+}
+
+.theme-side-bar1 .progressBar-area .single-progress-bar .progress {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.theme-side-bar1 .progressBar-area .single-progress-bar .ProgressWrap {
+    width: 100% !important;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .padding_25px {
+        padding: 20px;
+    }
+    .account-area.account-area2 .dashboard_iner .single-dashbord {
+        padding: 20px;
+    }
+    .account-area.account-area2 .dashboard_iner .Requirements {
+        padding: 20px;
+    }
+    .theme-side-bar1 .progressBar-area .single-progress-bar .star-count {
+        width: auto !important;
+    }
+}
+
+.latest-goods-area .portfolio-menu button {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1500px) and (max-width: 1560px) {
+    .footer-area
+        .footer-top
+        .footer-widget
+        .community-area
+        .total-community.second {
+        padding-left: 50px;
+    }
+}
+
+.Red_Button_1 {
+    background: #ff0000;
+    color: #fff;
+}
+
+.login_resister_area {
+    overflow: hidden;
+}
+
+.main_cart-area
+    .cart_description
+    .single_cart_description
+    .single_cart_left
+    .card_inner
+    .image
+    img {
+    width: 100px;
+}
+
+.header-area.sticky .profile-area a:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 767px) {
+    .login_resister_area .main-login-form .resiter {
+        position: relative;
+        margin-top: 25px;
+        top: 0;
+        left: 30px;
+        margin-bottom: 20px;
+    }
+    .login_resister_area
+        .main-login-form
+        .login_form_content
+        .login_form_field {
+        padding-bottom: 30px;
+    }
+    .header-area .profile-area a.user_author_pro {
+        background-color: #333 !important;
+    }
+    .Common_cat_menu {
+        background: #982bc7;
+        margin-top: 0;
+    }
+    .categori-menu-area.Common_cat_menu
+        .catagori-menu
+        ul.Common_cat_menu_list
+        > li
+        > a {
+        padding: 15px 7px !important;
+        font-size: 11px !important;
+    }
+    .Common_cat_menu .catagori-submenu-area {
+        padding: 20px;
+    }
+    .Common_cat_menu_list
+        .catagori-submenu-area
+        .catagori-content
+        .prise-form
+        input {
+        margin-bottom: 10px;
+    }
+}
+
+.header-area.sticky .profile-area .profile_dropdwon .sign_out a:hover {
+    color: #333 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .menu_md_bg {
+        background: #b737e0;
+    }
+    .categori-menu-area.Common_cat_menu
+        .catagori-menu
+        ul.Common_cat_menu_list
+        > li
+        > a {
+        padding: 15px 7px !important;
+        font-size: 14px !important;
+    }
+    .Common_cat_menu .catagori-submenu-area {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .menu_md_bg {
+        background: #b737e0;
+    }
+    .categori-menu-area.Common_cat_menu
+        .catagori-menu
+        ul.Common_cat_menu_list
+        > li
+        > a {
+        font-size: 13px;
+        padding: 25px 17px;
+    }
+    .Common_cat_menu {
+        background: #982bc7;
+    }
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__rendered {
+    padding: 0px 20px !important;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice {
+    padding: 5px 10px !important;
+    margin-top: 11px !important;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__clear {
+    height: 50px !important;
+    line-height: 50px !important;
+    margin: 0 32px 0 0 !important;
+    font-size: 24px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+

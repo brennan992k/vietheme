@@ -287,7 +287,7 @@ function showPicName($data){
                                             <div class="row">
                                                 <div class="col-xl-6 col-md-6"> 
                                                     @php
-                                                        $department =App\ManageQuery::InfixDepartment();
+                                                        $department =App\Models\ManageQuery::InfixDepartment();
                                                     @endphp
                                                     <label for="name">@lang('lang.department')<span>*</span></label>
                                                     <select name="department_id" class="wide" id="">

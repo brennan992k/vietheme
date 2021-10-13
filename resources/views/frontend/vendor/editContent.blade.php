@@ -306,16 +306,16 @@
                                                     <p>@lang('lang.upload_heading')</p>
                                                 </div>
                                                          @php
-                                                            $regular = App\ManageQuery::BuyerFees(1);
+                                                            $regular = App\Models\ManageQuery::BuyerFees(1);
                                                             // DB::table('buyer_fees')->where('type', 1)->first();
-                                                         $category_details=$category_details=App\ManageQuery::SelectedCategoryDetails($data['edit']->category_id);
+                                                         $category_details=$category_details=App\Models\ManageQuery::SelectedCategoryDetails($data['edit']->category_id);
                                                         //  DB::table('item_categories')->where('id',$data['edit']->category_id)->first();
                                                         //  $category_details=DB::table('item_categories')->where('id',Session::get('categorySlect')->id)->first();
                                                         $regular_recommended_price[]=explode("-",$category_details->recommended_price);
                                                          $extended_recommended_price[]=explode("-",$category_details->recommended_price_extended);
                                                          $recommended_price_commercial[]=explode("-",$category_details->recommended_price_commercial);
     
-                                                         $item_fee=App\ManageQuery::FreeItemOfCategory($data['edit']->category_id);
+                                                         $item_fee=App\Models\ManageQuery::FreeItemOfCategory($data['edit']->category_id);
                                                         //  DB::table('item_fees')->where('category_id',$data['edit']->category_id)->first();
                                                        
                                                     @endphp 
@@ -350,7 +350,7 @@
                                                            </div>
                                                         </div>
                                                         @php
-                                                            $extended = App\ManageQuery::BuyerFees(2);
+                                                            $extended = App\Models\ManageQuery::BuyerFees(2);
                                                         @endphp
                                                         <div class="upload_inner d-flex align-items-center mb-10">
                                                                 <span class="lisence-name">@lang('lang.extended_license')</span>

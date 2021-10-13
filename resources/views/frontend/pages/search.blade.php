@@ -83,7 +83,7 @@
                                                            @endphp 
                                                         @foreach (@$uniqueCat as $val)  
                                                         @php
-                                                            $catCount= App\ItemCounter::countByCategoryTag($cid[$countCategory++],$val);
+                                                            $catCount= App\Models\ItemCounter::countByCategoryTag($cid[$countCategory++],$val);
                                                             // DB::table('items')->where('category_id',@$cid[$countCategory++])->where('title','LIKE', '%'.@$data['key'].'%')->count();
                                                         @endphp 
                                                         @if ($catCount > 0)                                                            
@@ -117,10 +117,10 @@
                                                          @foreach ($uniqueTags as $val)   
                                                          @php
                                                          if (@$data['category']) {
-                                                              $number=App\ItemCounter::countByCategoryTag(@$data['category']->id,$val);
+                                                              $number=App\Models\ItemCounter::countByCategoryTag(@$data['category']->id,$val);
                                                          }else {
-                                                              $number=App\ItemCounter::countByTag($val);
-                                                              $_cat_slug=App\ItemCounter::getCatSlag($val);
+                                                              $number=App\Models\ItemCounter::countByTag($val);
+                                                              $_cat_slug=App\Models\ItemCounter::getCatSlag($val);
                                                            
                                                          }
                                                          @endphp 
@@ -212,11 +212,11 @@
                                                         @foreach (@$data['item']->unique('software_version') as $item)
                                                           @php
                                                            if (@$data['category']) {
-                                                              $software_version=App\ItemCounter::ItemCount('category_id',@$data['category']->id,'software_version',$item->software_version);
+                                                              $software_version=App\Models\ItemCounter::ItemCount('category_id',@$data['category']->id,'software_version',$item->software_version);
                                                             //  $software_version = DB::table('items')->where('category_id',@$data['category']->id)->where('software_version',@$item->software_version)->get()->count(); 
                                                             }else {
-                                                                $da=App\ManageQuery::FindSubAttributes(@$item->software_version);
-                                                                $software_version =App\ManageQuery::ItemWithTitelVersion(@$data['key'],@$item->software_version);
+                                                                $da=App\Models\ManageQuery::FindSubAttributes(@$item->software_version);
+                                                                $software_version =App\Models\ManageQuery::ItemWithTitelVersion(@$data['key'],@$item->software_version);
                                                             }
                                                           @endphp 
                                                            @if ($item) 
@@ -237,14 +237,14 @@
                                                             @foreach ($data['item']->unique('compatible_with') as $item)
                                                               @php
                                                                if (@$data['category']) {
-                                                                $compatible_with =App\ManageQuery::ItemCatWithCompatibleWith(@$data['category']->id,@$item->compatible_with);
+                                                                $compatible_with =App\Models\ManageQuery::ItemCatWithCompatibleWith(@$data['category']->id,@$item->compatible_with);
                                                                 //  DB::table('items')->where('category_id',@$data['category']->id)->where('compatible_with',@$item->compatible_with)->get()->count(); 
                                                                 }else {
-                                                                    $compatible_with =App\ManageQuery::ItemCatWithCompatibleWith(@$data['category']->id,@$item->compatible_with);
+                                                                    $compatible_with =App\Models\ManageQuery::ItemCatWithCompatibleWith(@$data['category']->id,@$item->compatible_with);
                                                                     //  DB::table('items')->where('category_id',@$data['category']->id)->where('compatible_with',@$item->compatible_with)->get()->count(); 
-                                                                    $da=App\ManageQuery::FindSubAttributes(@$item->compatible_with);
+                                                                    $da=App\Models\ManageQuery::FindSubAttributes(@$item->compatible_with);
                                                                     //  DB::table('sub_attributes')->find(@$item->compatible_with);
-                                                                    $compatible_with =App\ManageQuery::ItemWithTitelCompatible(@$data['key'],@$item->compatible_with);
+                                                                    $compatible_with =App\Models\ManageQuery::ItemWithTitelCompatible(@$data['key'],@$item->compatible_with);
                                                                     //  DB::table('items')->where('title','LIKE', '%'.@$data['key'].'%')->where('compatible_with',@$item->compatible_with)->get()->count(); 
                                                                 }
                                                               @endphp

@@ -9,7 +9,7 @@
    
 
 <link rel="stylesheet" href="{{'public/bkacEnd/'}}/modules.css">
-<link rel="stylesheet" href="{{asset('public/backEnd/modules.css')}}">
+<link rel="stylesheet" href="{{asset('public/backend/modules.css')}}">
     <section class="sms-breadcrumb mb-40 white-box up_breadcrumb">
         <div class="container-fluid">
             <div class="row justify-content-between">
@@ -111,7 +111,7 @@
                                     
                                                 </div>
                                             @php
-                                                $message=App\ManageQuery::SiteInageMessage(4);
+                                                $message=App\Models\ManageQuery::SiteInageMessage(4);
                                             @endphp
                                                 <div class="modal-body">
                                                     <form action="{{url('systemsetting/update_login_msg')}}" method="post">
@@ -141,7 +141,7 @@
                                     
                                                 </div>
                                             @php
-                                                $message=App\ManageQuery::SiteInageMessage(5);
+                                                $message=App\Models\ManageQuery::SiteInageMessage(5);
                                             @endphp
                                                 <div class="modal-body">
                                                     <form action="{{url('systemsetting/update_error_msg')}}" method="post">
@@ -221,7 +221,7 @@
 <script src="{{ asset('/')}}Modules/Systemsetting/Resources/assets/js/jquery-3.1.1.min.js"></script>
 <script src="{{ asset('/')}}Modules/Systemsetting/Resources/assets/js/fontawesome.js"></script>
 
-<script src="{{ asset('/')}}public/backEnd/ajax_image_upload.js"></script>
+<script src="{{ asset('/')}}public/backend/ajax_image_upload.js"></script>
 
 
 

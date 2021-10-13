@@ -2,7 +2,7 @@
  
 
 /* 
-    <script src="{{ asset('/')}}public/backEnd/backend_modules.js"></script>
+    <script src="{{ asset('/')}}public/backend/backend_modules.js"></script>
 */
  ! function(a) {
     var b = new Array,

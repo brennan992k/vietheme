@@ -202,6 +202,6 @@
 @endsection
 @section('script')
   
-<script src="{{asset('public/backEnd/send_email.js')}}"></script>
-<script src="{{asset('public/backEnd/backend.js')}}"></script>
+<script src="{{asset('public/backend/send_email.js')}}"></script>
+<script src="{{asset('public/backend/backend.js')}}"></script>
 @endsection

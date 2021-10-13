@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\ItemSubCategory;
+use App\Models\ItemSubCategory;
 use Illuminate\Database\Eloquent\Model;
 
 class ItemCategory extends Model

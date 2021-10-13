@@ -60,69 +60,69 @@
 </footer>
 <!-- ================End Footer Area ================= -->
 
-<script src="{{asset('public/backEnd/')}}/vendors/js/jquery-3.2.1.min.js"></script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/jquery-ui.js">
+<script src="{{asset('public/backend/')}}/vendors/js/jquery-3.2.1.min.js"></script>
+<script src="{{asset('public/backend/')}}/vendors/js/jquery-ui.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/jquery.data-tables.js">
+<script src="{{asset('public/backend/')}}/vendors/js/jquery.data-tables.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/dataTables.buttons.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/dataTables.buttons.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/buttons.flash.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/buttons.flash.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/jszip.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/jszip.min.js">
 </script>
-<script src="{{asset('public/backEnd/js/')}}/pdfmake.min.js"></script> 
-<script src="{{asset('public/backEnd/js/')}}/vfs_fonts.js"></script> 
-<script src="{{asset('public/backEnd/')}}/vendors/js/buttons.html5.min.js">
+<script src="{{asset('public/backend/js/')}}/pdfmake.min.js"></script> 
+<script src="{{asset('public/backend/js/')}}/vfs_fonts.js"></script> 
+<script src="{{asset('public/backend/')}}/vendors/js/buttons.html5.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/buttons.print.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/buttons.print.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/dataTables.rowReorder.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/dataTables.rowReorder.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/dataTables.responsive.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/dataTables.responsive.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/buttons.colVis.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/buttons.colVis.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/popper.js">
+<script src="{{asset('public/backend/')}}/vendors/js/popper.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/bootstrap.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/bootstrap.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/nice-select.min.js"></script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/jquery.magnific-popup.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/nice-select.min.js"></script>
+<script src="{{asset('public/backend/')}}/vendors/js/jquery.magnific-popup.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/fastselect.standalone.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/fastselect.standalone.min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/raphael-min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/raphael-min.js">
 </script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/morris.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/morris.min.js">
 </script>
 <script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
 
-<script type="text/javascript" src="{{asset('public/backEnd/')}}/vendors/js/toastr.min.js"></script>
+<script type="text/javascript" src="{{asset('public/backend/')}}/vendors/js/toastr.min.js"></script>
 
-<script type="text/javascript" src="{{asset('public/backEnd/')}}/vendors/js/moment.min.js"></script>
-<script type="text/javascript" src="{{asset('public/backEnd/')}}/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="{{asset('public/backend/')}}/vendors/js/moment.min.js"></script>
+<script type="text/javascript" src="{{asset('public/backend/')}}/js/bootstrap-datetimepicker.min.js"></script>
 
-<script src="{{asset('public/backEnd/')}}/vendors/js/bootstrap-datepicker.min.js">
+<script src="{{asset('public/backend/')}}/vendors/js/bootstrap-datepicker.min.js">
 </script>
 
 
-<script type="text/javascript" src="{{asset('public/backEnd/')}}/vendors/js/fullcalendar.min.js"></script>
+<script type="text/javascript" src="{{asset('public/backend/')}}/vendors/js/fullcalendar.min.js"></script>
 
 <script src="{{  asset('public/frontend/js/') }}/summernote.min.js"></script>
 
-<script type="text/javascript" src="{{asset('public/backEnd/')}}/js/jquery.validate.min.js"></script>
-<script src="{{asset('public/backEnd/')}}/vendors/js/select2/select2.min.js"></script>
+<script type="text/javascript" src="{{asset('public/backend/')}}/js/jquery.validate.min.js"></script>
+<script src="{{asset('public/backend/')}}/vendors/js/select2/select2.min.js"></script>
 <script src="{{ asset('public/js/')}}/additional.js"></script>
 <script src="{{ asset('public/js/')}}/validate.js"></script>
-<script src="{{ asset('public/backEnd/js/')}}/search.js"></script>
-<script src="{{asset('public/backEnd/')}}/js/color_picker/rgbaColorPicker.js"></script>
-<script src="{{asset('public/backEnd/')}}/js/main.js"></script>
-<script src="{{asset('public/backEnd/')}}/js/custom.js"></script>
-<script src="{{asset('public/backEnd/')}}/js/developer.js"></script>
+<script src="{{ asset('public/backend/js/')}}/search.js"></script>
+<script src="{{asset('public/backend/')}}/js/color_picker/rgbaColorPicker.js"></script>
+<script src="{{asset('public/backend/')}}/js/main.js"></script>
+<script src="{{asset('public/backend/')}}/js/custom.js"></script>
+<script src="{{asset('public/backend/')}}/js/developer.js"></script>
 
-<script src="{{asset('public/backEnd/backend.js')}}"></script>
-<script src="{{asset('public/backEnd/footer.js')}}"></script>
+<script src="{{asset('public/backend/backend.js')}}"></script>
+<script src="{{asset('public/backend/footer.js')}}"></script>
 
 
     @include('backend/partials/alertMessage')

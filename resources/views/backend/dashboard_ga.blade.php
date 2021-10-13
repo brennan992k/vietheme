@@ -9,10 +9,10 @@
 if(!empty(@$setting->currency_symbol)){ @$currency = @$setting->currency_symbol; }else{ @$currency = '$'; }   
 
 @endphp 
-<script src="{{asset('public/backEnd/js/jquery_1_9_1.js')}}"></script>
-<link rel="stylesheet" href="{{ asset('public/backEnd/css/') }}/dashboard.css">
-{{-- <script src="{{asset('public/backEnd/chart/')}}/Chart.min.css"></script> --}}
-{{-- <script src="{{asset('public/backEnd/chart/')}}/Chart.min.js"></script> --}}
+<script src="{{asset('public/backend/js/jquery_1_9_1.js')}}"></script>
+<link rel="stylesheet" href="{{ asset('public/backend/css/') }}/dashboard.css">
+{{-- <script src="{{asset('public/backend/chart/')}}/Chart.min.css"></script> --}}
+{{-- <script src="{{asset('public/backend/chart/')}}/Chart.min.js"></script> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js"></script>
 <section class="mb-40 up_dashboard">
     <div class="container-fluid p-0">
@@ -350,7 +350,7 @@ if(!empty(@$setting->currency_symbol)){ @$currency = @$setting->currency_symbol;
   
   @endsection
   @section('script')
-  <script src="{{ url('/') }}/public/backEnd/js/dashboard.js"></script>
+  <script src="{{ url('/') }}/public/backend/js/dashboard.js"></script>
 
 <script>
     $(function () {

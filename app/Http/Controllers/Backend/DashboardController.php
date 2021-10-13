@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Backend;
 
-use Analytics;
 use App\Models\ItemOrder;
 use App\Models\ItemPreview;
 use Nwidart\Modules\Module;
@@ -12,6 +11,7 @@ use App\Http\Controllers\Controller;
 use Brian2694\Toastr\Facades\Toastr;
 use Exception;
 use Illuminate\Http\Request;
+use Analytics;
 
 class DashboardController extends Controller
 {

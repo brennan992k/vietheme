@@ -4,7 +4,7 @@
 
 @section('script')
       
-<script src="{{asset('public/backEnd/backend.js')}}"></script>
+<script src="{{asset('public/backend/backend.js')}}"></script>
 @endsection
 
 

@@ -298,6 +298,6 @@
 </section>
 </div>
 
-    <script src="{{ asset('/')}}public/backEnd/backend_modules.js"></script>
+    <script src="{{ asset('/')}}public/backend/backend_modules.js"></script>
 
 @endsection

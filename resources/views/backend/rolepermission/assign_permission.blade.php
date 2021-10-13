@@ -2,7 +2,7 @@
 @section('mainContent')
 
 <link rel="stylesheet" href="{{asset('/Modules/RolePermission/public/css/style.css')}}">
-<link rel="stylesheet" href="{{asset('public/backEnd/')}}/assign_permission.css">
+<link rel="stylesheet" href="{{asset('public/backend/')}}/assign_permission.css">
 
 <section class="sms-breadcrumb mb-40 white-box lol">
     <div class="container-fluid">

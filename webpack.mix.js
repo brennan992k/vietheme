@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +11,18 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+mix.sass(
+    "resources/assets/frontend/scss/style.scss",
+    "public/frontend/css/style.css"
+).options({
+    processCssUrls: false,
+    autoprefixer: { remove: false }
+});
+
+mix.sass(
+    "resources/assets/backend/scss/style.scss",
+    "public/backend/css/style.css"
+).options({
+    processCssUrls: false,
+    autoprefixer: { remove: false }
+});

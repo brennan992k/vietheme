@@ -1,6 +1,6 @@
 @extends('backend.master')
 @section('mainContent')
-<link rel="stylesheet" href="{{ asset('public/backEnd/css/') }}/pending_product.css">
+<link rel="stylesheet" href="{{ asset('public/backend/css/') }}/pending_product.css">
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
         <div class="row justify-content-between">

@@ -12,7 +12,7 @@
     </div>
 
      @php
-                $check_permission=  App\AssignModulePermission::where('permission',1)->where('role_id',Auth::user()->role_id)->get();
+                $check_permission=  App\Models\AssignModulePermission::where('permission',1)->where('role_id',Auth::user()->role_id)->get();
                 $permitted_modules=[];
                 foreach ($check_permission as $key => $value) {
                    $permitted_modules[]=$value->module_id;
@@ -127,7 +127,7 @@
 
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',4)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',4)->first();
             @endphp
             @if(Auth::user()->role_id == 1 || @$data->permission == 1)
             <li>
@@ -152,7 +152,7 @@
 
             @endif --}}
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',5)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',5)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(5, $permitted_modules))
             <li>
@@ -182,7 +182,7 @@
                     </li>
                     @endif
                     {{-- @php
-                        $module_link=  App\AssignModulePermission::where('module_id',6)->first();
+                        $module_link=  App\Models\AssignModulePermission::where('module_id',6)->first();
                     @endphp --}}
                     @if(Auth::user()->role_id == 1 || in_array(6, $permitted_modules))
                     <li>
@@ -191,7 +191,7 @@
 
                     @endif
                     {{-- @php
-                        $module_link=  App\AssignModulePermission::where('module_id',7)->first();
+                        $module_link=  App\Models\AssignModulePermission::where('module_id',7)->first();
                     @endphp --}}
                     @if(Auth::user()->role_id == 1 || in_array(7, $permitted_modules))
                     <li>
@@ -227,7 +227,7 @@
 
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',8)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',8)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(8, $permitted_modules))
             <li>
@@ -246,7 +246,7 @@
 
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',9)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',9)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(9, $permitted_modules))
             <li>
@@ -284,7 +284,7 @@
             @endif
              
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',10)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',10)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(10, $permitted_modules))
             <li>
@@ -315,7 +315,7 @@
 
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',11)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',11)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(11, $permitted_modules))
             <li>
@@ -362,7 +362,7 @@
             @endif
             {{-- @dd('test')  --}}
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',12)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',12)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(12, $permitted_modules))
             <li>
@@ -407,7 +407,7 @@
             </li>
             @endif --}}
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',11)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',11)->first();
             @endphp
             @if(Auth::user()->role_id == 1 || @$data->permission == 1)
             @if(Module::has('Blog'))
@@ -428,7 +428,7 @@
             @endif
             @endif --}}
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',13)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',13)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(13, $permitted_modules))
             @if(Module::has('KnowledgeBase'))
@@ -453,7 +453,7 @@
             @endif
             
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',14)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',14)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 ||in_array(14, $permitted_modules))
             @if(Module::has('Tax'))
@@ -484,7 +484,7 @@
             @endif            
             @endif --}}
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',15)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',15)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(15, $permitted_modules))
                 <li>
@@ -501,7 +501,7 @@
                 </li> 
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',16)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',16)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 ||in_array(16, $permitted_modules))
                 <li>
@@ -519,7 +519,7 @@
 
          
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',17)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',17)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(17, $permitted_modules))
                 <li>
@@ -533,7 +533,7 @@
                 </li>
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',18)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',18)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 ||in_array(18, $permitted_modules))
         @if(Module::has('Ticket'))
@@ -561,7 +561,7 @@
             @endif
 
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',19)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',19)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(19, $permitted_modules))
             <li>
@@ -576,7 +576,7 @@
             </li>
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',20)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',20)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(20, $permitted_modules))
             @if(Module::has('Systemsetting'))
@@ -610,7 +610,7 @@
         @endif
         @endif
         {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',21)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',21)->first();
             @endphp --}}
             @if(Auth::user()->role_id == 1 || in_array(21, $permitted_modules))
            @if(Module::has('Pages'))
@@ -638,7 +638,7 @@
             @endif
             @endif
             {{-- @php
-                $data=  App\AssignModulePermission::where('module_id',22)->first();
+                $data=  App\Models\AssignModulePermission::where('module_id',22)->first();
             @endphp --}}
         @if(Auth::user()->role_id == 1 || in_array(22, $permitted_modules))
             <li>

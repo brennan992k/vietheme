@@ -6,7 +6,7 @@ $name = explode('/', $data);
 return $name[3];
 }
 @endphp
-<link rel="stylesheet" href="{{asset('public/backEnd/css/')}}/agent.css">
+<link rel="stylesheet" href="{{asset('public/backend/css/')}}/agent.css">
 
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">

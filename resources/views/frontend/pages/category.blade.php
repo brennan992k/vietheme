@@ -85,9 +85,9 @@
                                                            
                                                          @php
                                                          if (@$data['sub_cat']) {
-                                                             @$number =App\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,$val); 
+                                                             @$number =App\Models\ManageQuery::ItemWithSubCategoryTag($data['sub_cat']->id,$val); 
                                                          }else {
-                                                             @$number = App\ManageQuery::ItemWithCategoryTag($data['category']->id,$val); 
+                                                             @$number = App\Models\ManageQuery::ItemWithCategoryTag($data['category']->id,$val); 
                                                          }
                                                          @endphp                                                       
                                                              @if (@$val) 

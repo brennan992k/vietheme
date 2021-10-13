@@ -1,7 +1,7 @@
 @php
      $notification=app('sm_notifications');
 @endphp
-<link rel="stylesheet" href="{{ asset('public/backEnd/css/') }}/live_search.css">
+<link rel="stylesheet" href="{{ asset('public/backend/css/') }}/live_search.css">
 <nav class="navbar navbar-expand-lg up_navbar">
     <div class="container-fluid">
         <div class="col-lg-12">
@@ -169,7 +169,7 @@
                                 @if(!empty(@Auth::user()->profile->image))
                                 <img class="rounded-circle" src="{{asset(@Auth::user()->profile->image)}}"  alt="">
                                 @else
-                                <img class="rounded-circle" src="{{asset('public/backEnd/img/admin/staff.png')}}"  alt="">
+                                <img class="rounded-circle" src="{{asset('public/backend/img/admin/staff.png')}}"  alt="">
                                 @endif
                         </button>
                         <div class="dropdown-menu profile-box">
@@ -180,7 +180,7 @@
                                             @if(!empty(@Auth::user()->profile->image))
                                                 <img class="client_img" src="{{asset(@Auth::user()->profile->image)}}"alt="">
                                             @else
-                                                <img class="client_img" src="{{asset('public/backEnd/img/admin/staff.png')}}"alt="">
+                                                <img class="client_img" src="{{asset('public/backend/img/admin/staff.png')}}"alt="">
                                             @endif
                                             <div class="d-flex ml-10">
                                                 <div class="">
